@@ -70,35 +70,35 @@ const About = () => {
         </div>
       </Container>
       {/* TOUR GUIDE///////////////////////////////////////*/}
-      <Container className="d-flex flex-column justify-content-center align-items-center  mb-3">
+      <Container className="mb-3 px-5">
         <h2 className="text-center text-uppercase mt-3 mb-5">
           why choose <strong style={{ color: "#ea3c23" }}>us</strong>
         </h2>
-        <Row>
-          <Col>
+        <Row className="tourGuides px-3">
+          <Col className="tourGuideBox d-flex align-items-center justify-content-center">
             <div className="guide shadow d-flex align-items-center justify-content-center">
-              <span className="about-shadow orange text-center  text-uppercase fs-4">
+              <span className="about-shadow orange text-center">
                 2000+ Our worldwide guide
               </span>
             </div>
           </Col>
-          <Col>
+          <Col className="tourGuideBox d-flex align-items-center justify-content-center">
             <div className="agency shadow d-flex align-items-center justify-content-center">
-              <span className="about-shadow orange text-center  text-uppercase fs-4">
+              <span className="about-shadow orange text-center">
                 100% trusted travel agency
               </span>
             </div>{" "}
           </Col>
-          <Col>
+          <Col className="tourGuideBox d-flex align-items-center justify-content-center">
             <div className="experience shadow d-flex align-items-center justify-content-center">
-              <span className="about-shadow orange text-center  text-uppercase fs-4">
+              <span className="about-shadow orange text-center">
                 10 years of travel experience
               </span>
             </div>
           </Col>
-          <Col>
+          <Col className="tourGuideBox d-flex align-items-center justify-content-center">
             <div className="happy shadow d-flex align-items-center justify-content-center">
-              <span className="about-shadow orange text-center  text-uppercase fs-4">
+              <span className="about-shadow orange text-center">
                 90% of our happy traveller
               </span>
             </div>

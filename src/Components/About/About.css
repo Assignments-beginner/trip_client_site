@@ -48,6 +48,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.tourGuides {
+  display: flex;
+  justify-items: center;
+}
+
 .guide {
   width: 200px;
   height: 200px;
@@ -138,5 +143,8 @@
   .country {
     width: 150px;
     height: 150px;
+  }
+  .tourGuideBox {
+    padding-bottom: 30px;
   }
 }
