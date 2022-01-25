@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
 }
+.awardText {
+  font-weight: 50;
+  font-size: 50px;
+}
 .adventures {
   display: flex;
 }
@@ -105,17 +109,20 @@
   text-align: justify;
 }
 
+.tourPlan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .discount {
-  width: 500px;
-  height: 500px;
+  height: 600px;
+  border: 2px solid purple;
   background-image: url("https://tevily-html.vercel.app/assets/images/resources/about-one-img-1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header {
-  width: 500px;
-}
 .orange {
   color: whitesmoke;
   font-weight: bolder;
@@ -146,5 +153,15 @@
   }
   .tourGuideBox {
     padding-bottom: 30px;
+  }
+  .awardText {
+    font-size: 25px;
+  }
+  .tourPlan {
+    flex-direction: column-reverse;
+  }
+  .discount {
+    width: 300px;
+    height: 800px;
   }
 }

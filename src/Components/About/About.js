@@ -4,13 +4,13 @@ import "./About.css";
 const About = () => {
   return (
     <div className="mb-5 pb-3">
-      <h1 className="text-center text-uppercase my-5">
+      <h2 className="text-center text-uppercase my-5">
         about <strong style={{ color: "#ea3c23" }}>us</strong>
-      </h1>
+      </h2>
       {/* AWARD////////////////////////////////////////////*/}
       <Container className="award mb-5">
         <div className="px-5">
-          <h1 className="text-center text-uppercase display-4">
+          <h1 className="text-center text-uppercase awardText">
             Trip <strong style={{ color: "#ea3c23" }}>toe</strong> is an award
             winning top Tour Booking Platform
           </h1>
@@ -51,13 +51,13 @@ const About = () => {
         </div>
       </Container>
       {/* DISCOUNT/////////////////////////////////////////*/}
-      <Container className="d-flex justify-content-center align-items-center  mb-5">
-        <div className="discount me-3">
+      <Row className="tourPlan mb-5 px-5">
+        <Col className="discount">
           <h3 className="text-end p-5 m-3 display-3">
             <strong style={{ color: "#ea3c23" }}>30%</strong> <br /> OFF
           </h3>
-        </div>
-        <div className="header ms-3">
+        </Col>
+        <Col className="px-5">
           <h1 className="text-center text-uppercase display-4">
             Plan Your <strong style={{ color: "#ea3c23" }}>Trip</strong> with us
           </h1>
@@ -67,8 +67,8 @@ const About = () => {
             to pick activities and places suitable to your family's interests,
             and plan your outdoor adventures with the local weather in mind.
           </p>
-        </div>
-      </Container>
+        </Col>
+      </Row>
       {/* TOUR GUIDE///////////////////////////////////////*/}
       <Container className="mb-3 px-5">
         <h2 className="text-center text-uppercase mt-3 mb-5">
