@@ -53,13 +53,13 @@ const About = () => {
       {/* DISCOUNT/////////////////////////////////////////*/}
       <Row className="tourPlan mb-5 px-5">
         <Col className="discount">
-          <h3 className="text-end p-5 m-3 display-3">
+          <h3 className="discountText p-5 m-3 display-3">
             <strong style={{ color: "#ea3c23" }}>30%</strong> <br /> OFF
           </h3>
         </Col>
         <Col className="px-5">
           <h1 className="text-center text-uppercase display-4">
-            Plan Your <strong style={{ color: "#ea3c23" }}>Trip</strong> with us
+            Plan Your <br /> <strong style={{ color: "#ea3c23" }}>Trip</strong> with us
           </h1>
           <p className="text-justify mt-4">
             Use our free trip planner to get a personalized day by day itinerary
