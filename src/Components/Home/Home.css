@@ -11,7 +11,7 @@
 }
 @media all and (max-width: 688px) {
   .banners {
-    height: 200px;
+    height: 150px;
   }
   .bannerText {
     font-size: 15px;
