@@ -8,14 +8,14 @@ const About = () => {
         about <strong style={{ color: "#ea3c23" }}>us</strong>
       </h1>
       {/* AWARD////////////////////////////////////////////*/}
-      <Container className="d-flex align-items-center  mb-5">
+      <Container className="award mb-5">
         <div className="px-5">
           <h1 className="text-center text-uppercase display-4">
             Trip <strong style={{ color: "#ea3c23" }}>toe</strong> is an award
             winning top Tour Booking Platform
           </h1>
         </div>
-        <div className="d-flex px-5">
+        <div className="adventures px-5">
           <Row>
             <Col>
               <div className="adventure d-flex align-items-center justify-content-center">

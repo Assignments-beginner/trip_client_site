@@ -1,3 +1,10 @@
+.award {
+  display: flex;
+  align-items: center;
+}
+.adventures {
+  display: flex;
+}
 .country {
   width: 200px;
   height: 200px;
@@ -107,4 +114,29 @@
 .orange {
   color: whitesmoke;
   font-weight: bolder;
+}
+
+@media all and (max-width: 688px) {
+  .award {
+    flex-direction: column;
+  }
+  .adventures {
+    padding-top: 40px;
+  }
+  .adventure {
+    width: 150px;
+    height: 150px;
+  }
+  .wildlife {
+    width: 150px;
+    height: 150px;
+  }
+  .ancient {
+    width: 150px;
+    height: 150px;
+  }
+  .country {
+    width: 150px;
+    height: 150px;
+  }
 }
