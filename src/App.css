@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* For Footer */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    flex: 1;
+  }

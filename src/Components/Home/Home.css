@@ -1,0 +1,19 @@
+.res-newsletter {
+  max-width: 750px;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+}
+@media all and (max-width: 688px) {
+  .res-newsletter {
+    padding: 0px 10px 0px 10px;
+    max-width: 290px;
+  }
+  .clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

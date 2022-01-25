@@ -1,0 +1,34 @@
+.main-footer {
+  /* background-color: #0B114A; */
+  position: relative;
+  bottom: 0;
+}
+
+hr.new {
+  border: 1px solid grey;
+  width: 50%;
+  margin: auto;
+}
+
+.footer-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media all and (max-width: 688px) {
+  .copyright {
+    font-size: 12px;
+  }
+  .footer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-details-top {
+    padding-top: 40px;
+  }
+  .footer-first-details {
+    padding-top: 30px;
+  }
+}

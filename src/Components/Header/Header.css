@@ -1,0 +1,19 @@
+.navs {
+  color: white;
+}
+.navs:hover {
+  color: #ea3c23;
+}
+.navs-active {
+  color: #ea3c23;
+}
+
+.dropnav {
+  color: black;
+}
+.dropnav:hover {
+  color: #ea3c23;
+}
+.dropnav-active {
+  color: #ea3c23;
+}
