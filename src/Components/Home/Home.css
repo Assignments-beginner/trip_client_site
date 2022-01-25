@@ -1,12 +1,24 @@
+.bannerTitle {
+  font-weight: 50;
+  font-size: 60px;
+}
 .res-newsletter {
   max-width: 750px;
 }
-
 .clients {
   display: flex;
   justify-content: center;
 }
 @media all and (max-width: 688px) {
+  .banners {
+    height: 200px;
+  }
+  .bannerText {
+    font-size: 15px;
+  }
+  .bannerTitle {
+    font-size: 30px;
+  }
   .res-newsletter {
     padding: 0px 10px 0px 10px;
     max-width: 290px;

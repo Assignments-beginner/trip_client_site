@@ -20,46 +20,46 @@ const Home = () => {
           <Carousel.Item>
             <img
               style={{ opacity: "0.5" }}
-              height="400"
-              className="d-block w-100"
+              
+              className="d-block w-100 banners"
               src={slideOne}
               alt="First slide"
             />
             <Carousel.Caption>
-              <h1 className="display-2 text-uppercase tiny-shadow">
+              <h1 className="text-uppercase tiny-shadow bannerTitle">
                 Excitement
               </h1>
-              <h4 className="text-uppercase">check our blogs</h4>
+              <h4 className="text-uppercase bannerText">check our blogs</h4>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               style={{ opacity: "0.5" }}
-              height="400"
-              className="d-block w-100"
+              
+              className="d-block w-100 banners"
               src={slideTwo}
               alt="Second slide"
             />
 
             <Carousel.Caption>
-              <h1 className="display-2 text-uppercase tiny-shadow">Explore</h1>
-              <h4 className="text-uppercase">check our blogs</h4>
+              <h1 className="text-uppercase tiny-shadow bannerTitle">Explore</h1>
+              <h4 className="text-uppercase bannerText">check our blogs</h4>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               style={{ opacity: "0.5" }}
-              height="400"
-              className="d-block w-100"
+              
+              className="d-block w-100 banners"
               src={slideThree}
               alt="Third slide"
             />
 
             <Carousel.Caption>
-              <h1 className="display-2 text-uppercase tiny-shadow">
+              <h1 className="text-uppercase tiny-shadow bannerTitle">
                 Experience
               </h1>
-              <h4 className="text-uppercase">check our blogs</h4>
+              <h4 className="text-uppercase bannerText">check our blogs</h4>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
