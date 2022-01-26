@@ -18,8 +18,15 @@
   color: #ea3c23;
 }
 
+.userBar {
+  margin-left: 25px;
+}
+
 @media all and (max-width: 688px) {
   .travelBoy {
     display: none;
+  }
+  .userBar {
+    margin-left: 0px;
   }
 }

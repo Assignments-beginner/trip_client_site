@@ -72,41 +72,37 @@ const Header = () => {
               </NavLink>
             </Nav>
 
-            <Nav className="d-flex flex-column align-items-center">
-              <div>
-                {user?.email && (
-                  <div>
-                    <img
-                      className="rounded-circle user-img"
-                      width={32}
-                      height={32}
-                      src={user.photoURL}
-                      alt=""
-                    />
-                    <span style={{ fontSize: "12px" }} className="text-white">
-                      &nbsp;{user.displayName}
-                    </span>
-                  </div>
-                )}
-              </div>
+            <Nav className="d-flex align-items-center">
+              {user?.email && (
+                <div className="d-flex align-items-center userBar">
+                  <img
+                    className="rounded-circle user-img"
+                    width={32}
+                    height={32}
+                    src={user.photoURL}
+                    alt=""
+                  />
+                  <span style={{ fontSize: "12px" }} className="text-white">
+                    &nbsp;{user.displayName}
+                  </span>
+                  <NavLink
+                    activeClassName="navs-active"
+                    style={{ fontSize: "12px" }}
+                    className="text-white ms-2 me-3 text-uppercase text-decoration-none"
+                    to="/signin"
+                    onClick={logOut}
+                  >
+                    Log Out
+                  </NavLink>
+                </div>
+              )}
               {!user?.email && (
                 <NavLink
                   activeClassName="navs-active"
-                  className="fs-6 navs ms-3 me-3 text-decoration-none"
+                  className="fs-6 navs ms-3 me-3 text-uppercase text-decoration-none"
                   to="/signin"
                 >
                   Sign In
-                </NavLink>
-              )}
-              {user?.email && (
-                <NavLink
-                  activeClassName="navs-active"
-                  style={{ fontSize: "11px" }}
-                  className="navs ms-2 me-3 text-decoration-none text-uppercase"
-                  to="/signin"
-                  onClick={logOut}
-                >
-                  Log Out
                 </NavLink>
               )}
             </Nav>
