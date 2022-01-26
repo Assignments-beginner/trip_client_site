@@ -2,8 +2,10 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import travelBoy from "../../Images/travelBoy.png";
+import useAuth from "../../Hooks/useAuth";
 import "./Header.css";
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <div className="py-1 bg-dark">
       <Navbar collapseOnSelect expand="lg">
@@ -15,7 +17,6 @@ const Header = () => {
             <span className="d-block fs-4">
               <strong style={{ color: "#EA3C23" }}>trip&nbsp;</strong>
               <img
-                
                 width="30"
                 height="50"
                 className="ms-1 travelBoy"
@@ -33,7 +34,10 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
-          <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
+          <Navbar.Collapse
+            className="justify-content-end"
+            id="responsive-navbar-nav"
+          >
             <Nav className="align-items-center">
               <NavLink
                 activeClassName="navs-active"
@@ -68,25 +72,23 @@ const Header = () => {
               </NavLink>
             </Nav>
 
-            {/* <Nav className="d-flex align-items-center">
+            <Nav className="d-flex flex-column align-items-center">
               <div>
                 {user?.email && (
-                  <img
-                    className="rounded-circle user-img"
-                    width={32}
-                    height={32}
-                    src={user.photoURL}
-                    alt=""
-                  />
+                  <div>
+                    <img
+                      className="rounded-circle user-img"
+                      width={32}
+                      height={32}
+                      src={user.photoURL}
+                      alt=""
+                    />
+                    <span style={{ fontSize: "12px" }} className="text-white">
+                      &nbsp;{user.displayName}
+                    </span>
+                  </div>
                 )}
               </div>
-              <NavLink
-                className="fs-6 ms-3 me-3 text-decoration-none text-white"
-                to="#"
-              >
-                {user.displayName}
-              </NavLink>
-
               {!user?.email && (
                 <NavLink
                   activeClassName="navs-active"
@@ -96,18 +98,18 @@ const Header = () => {
                   Sign In
                 </NavLink>
               )}
-
               {user?.email && (
                 <NavLink
                   activeClassName="navs-active"
-                  className="fs-6 navs ms-3 me-3 text-decoration-none"
+                  style={{ fontSize: "11px" }}
+                  className="navs ms-2 me-3 text-decoration-none text-uppercase"
                   to="/signin"
                   onClick={logOut}
                 >
                   Log Out
                 </NavLink>
               )}
-            </Nav> */}
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

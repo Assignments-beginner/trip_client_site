@@ -55,14 +55,14 @@ const Footer = () => {
           </p>
 
           <div>
-            <i class="fab fa-cc-visa text-white fs-1 p-2"></i>
-            <i class="fab fa-google-pay text-white fs-1 p-2"></i>
+            <i className="fab fa-cc-visa text-white fs-1 p-2"></i>
+            <i className="fab fa-google-pay text-white fs-1 p-2"></i>
             <i className="fab fa-cc-mastercard text-white fs-1 p-2"></i>
           </div>
 
           <div>
-            <i class="fab fa-cc-paypal text-white fs-1 p-2"></i>
-            <i class="fab fa-cc-amazon-pay text-white fs-1 p-2"></i>
+            <i className="fab fa-cc-paypal text-white fs-1 p-2"></i>
+            <i className="fab fa-cc-amazon-pay text-white fs-1 p-2"></i>
             <i className="fab fa-cc-stripe text-white fs-1 text-white fs-1 p-2"></i>
           </div>
         </div>
@@ -76,13 +76,12 @@ const Footer = () => {
           <p className="text-white">California St, Stockton, United States</p>
 
           <p className="text-white">
-            
             <i style={{ color: "#ea3c23" }} className="fas fa-phone"></i> +1
             209-507-5152
           </p>
         </div>
       </Container>
-      <hr class="new" />
+      <hr className="new" />
       {/* Footer Logo  */}
       <div className="w-100 py-3 bg-dark">
         {/*/////////////////////// Title ////////////////////// */}
@@ -90,7 +89,6 @@ const Footer = () => {
           <Container>
             <div className="text-white">
               <span className="d-block text-center text-uppercase fs-5">
-                
                 <strong style={{ color: "#EA3C23" }}>trip</strong> expo
               </span>
               <span className="copyright">

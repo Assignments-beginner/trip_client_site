@@ -4,8 +4,6 @@ import { Container } from "react-bootstrap";
 const Blogs = () => {
   return (
     <div style={{ backgroundColor: "#F9FBFF" }}>
-      
-
       <Container className="p-5">
         {/* (1) Treatments Right */}
         <Container
@@ -16,7 +14,7 @@ const Blogs = () => {
             <div className="me-5">
               <div className="pb-5">
                 <h3>Urgull Mountain peak</h3>
-                <p class="text-justify">
+                <p className="text-justify">
                   The hill became a defense point since the early ages of the
                   city foundation in the 12th century, but the walls and the
                   military structure were reinforced especially after the modern
@@ -40,7 +38,7 @@ const Blogs = () => {
             </div>
             <div>
               <img
-                class="
+                className="
                     rounded-circle
                      custom-border
                   "
@@ -61,7 +59,7 @@ const Blogs = () => {
           <div className="d-flex align-items-center">
             <div>
               <img
-                class="
+                className="
                     rounded-circle
                      
                     custom-border
@@ -75,7 +73,7 @@ const Blogs = () => {
             <div className="ms-5">
               <div className="pb-5">
                 <h3>Qin Mountains Tradition</h3>
-                <p class="text-justify">
+                <p className="text-justify">
                   To the north is the densely populated Wei River valley, an
                   ancient center of Chinese civilization. To the south is the
                   Han River valley. To the west is the line of mountains along
@@ -109,7 +107,7 @@ const Blogs = () => {
             <div className="me-5">
               <div className="pb-5">
                 <h3>Gondola Punta‎</h3>
-                <p class="text-justify">
+                <p className="text-justify">
                   Beginning as early as AD 166–168, the Quadi and Marcomanni
                   destroyed the main Roman town in the area, present-day Oderzo.
                   This part of Roman Italy was again overrun in the early 5th
@@ -134,7 +132,7 @@ const Blogs = () => {
             </div>
             <div>
               <img
-                class="
+                className="
                     rounded-circle
                      custom-border
                   "
@@ -155,7 +153,7 @@ const Blogs = () => {
           <div className="d-flex align-items-center">
             <div>
               <img
-                class="
+                className="
                     rounded-circle
                      custom-border
                   "
@@ -168,7 +166,7 @@ const Blogs = () => {
             <div className="ms-5">
               <div className="pb-5">
                 <h3>Musee D'Orsay‎</h3>
-                <p class="text-justify">
+                <p className="text-justify">
                   The Musée d'Orsay is a museum in Paris, France, on the Left
                   Bank of the Seine. It is housed in the former Gare d'Orsay, a
                   Beaux-Arts railway station built between 1898 and 1900. The
