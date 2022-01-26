@@ -63,7 +63,7 @@ const About = () => {
           </h1>
           <p className="text-justify mt-4">
             Use our free trip planner to get a personalized day by day itinerary
-            for your vacation. Trip Toe is the new way to plan your holiday. Try
+            for your vacation. <strong>Trip Expo</strong> is the new way to plan your holiday. Try
             to pick activities and places suitable to your family's interests,
             and plan your outdoor adventures with the local weather in mind.
           </p>

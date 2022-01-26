@@ -9,9 +9,10 @@ import Footer from "./Components/Footer/Footer";
 import LogIn from "./Components/LogIn/LogIn";
 import AuthProvider from "./Context/AuthProvider";
 import Registration from "./Components/Registration/Registration";
-// import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import NotFound from "./Components/NotFound/NotFound";
 import Sorry from "./Components/Sorry/Sorry";
+import Dashboard from "./Components/Dashboard/Dashboard";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
                 <Route path="/registration">
                   <Registration></Registration>
                 </Route>
+                <PrivateRoute path="/dashboard">
+                  <Dashboard></Dashboard>
+                </PrivateRoute>
                 <Route path="/sorry">
                   <Sorry></Sorry>
                 </Route>
