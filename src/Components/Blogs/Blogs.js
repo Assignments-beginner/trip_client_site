@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Container,
   Row,
@@ -6,10 +6,15 @@ import {
   InputGroup,
   FormControl,
   Button,
+  Modal,
 } from "react-bootstrap";
 import "../Blogs/Blogs.css";
 
 const Blogs = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <Container className="py-5">
       <Row className="d-flex">
@@ -67,13 +72,24 @@ const Blogs = () => {
           </h5>
           <aside>
             {/* <Button variant="outline-secondary w-100">GET INSPIRED</Button> */}
-            <button className="tipsButton">GET INSPIRED</button>
-            <button className="tipsButton">GET INSPIRED</button>
-            <button className="tipsButton">GET INSPIRED</button>
-            <button className="tipsButton">GET INSPIRED</button>
-            <button className="tipsButton">GET INSPIRED</button>
-            <button className="tipsButton">GET INSPIRED</button>
-            <button className="tipsButton">GET INSPIRED</button>
+            <>
+              <button onClick={handleShow} className="tipsButton">
+                GET INSPIRED
+              </button>
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Body>
+                  <div className="d-flex justify-content-center">
+                    <i style={{ fontSize: "60px",}} className="my-3 far fa-lightbulb"></i>
+                  </div>
+                  <p style={{ fontSize: "20px", textAlign: "center" }}>
+                    Planning a trip and being on the road is a lot easier than
+                    you think. It’s the decision to take that step out the door
+                    that is the hardest part. It requires the most change.
+                    You’re leaving your old life behind for a new one.
+                  </p>
+                </Modal.Body>
+              </Modal>
+            </>
           </aside>
         </Col>
       </Row>
