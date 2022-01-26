@@ -33,4 +33,16 @@
   .signin-btn {
     width: 300px;
   }
+  .signin-banner {
+    width: 100%;
+    background:
+            /* top, transparent black, faked with gradient */ linear-gradient(
+        rgba(255, 255, 255, 0.144),
+        rgba(255, 255, 255, 0.144)
+      ),
+      url("../../Images/res_signin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
 }
