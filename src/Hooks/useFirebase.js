@@ -81,7 +81,7 @@ const useFirebase = () => {
 \*-------------------------------------------------------------------------------*/
 
   useEffect(() => {
-    fetch(`https://morning-badlands-81993.herokuapp.com/users/${user.email}`)
+    fetch(`https://shrouded-headland-08303.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);

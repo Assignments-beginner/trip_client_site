@@ -51,7 +51,7 @@ const Registration = () => {
   const addUserToDatabase = (email) => {
     //Heroku_Problem
     // fetch("http://localhost:5000/users", {
-    fetch("https://morning-badlands-81993.herokuapp.com/users", {
+    fetch("https://shrouded-headland-08303.herokuapp.com/users", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email }),

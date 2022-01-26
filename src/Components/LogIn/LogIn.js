@@ -62,7 +62,7 @@ const LogIn = () => {
 
   //add user to mongoDB
   const addUserToDatabase = (email) => {
-    fetch("https://morning-badlands-81993.herokuapp.com/users", {
+    fetch("https://shrouded-headland-08303.herokuapp.com/users", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email }),
