@@ -70,12 +70,24 @@ const Header = () => {
               >
                 Blogs
               </NavLink>
+
+              {user?.email && (
+                <NavLink
+                  activeclassname="navs-active"
+                  className="fs-6 navs me-3 text-decoration-none"
+                  to="/dashboard"
+                >
+                  Dashboard
+                </NavLink>
+              )}
+
               {!user?.email && (
                 <NavLink
                   activeClassName="navs-active"
                   className="fs-6 navs text-center text-uppercase text-decoration-none"
                   to="/signin"
-                >Sign In
+                >
+                  Sign In
                 </NavLink>
               )}
             </Nav>
@@ -103,7 +115,7 @@ const Header = () => {
                     Log Out
                   </NavLink>
                 </div>
-              )}              
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -6,6 +6,7 @@ import AddReview from "./AddReview/AddReview";
 import AddNewBlogs from "./AddNewBlogs/AddNewBlogs";
 import MakeAdmin from "./MakeAdmin/MakeAdmin";
 import ManageAllBlogs from "./ManageAllBlogs/ManageAllBlogs";
+import Tips from "./Tips/Tips";
 import useAuth from "../../Hooks/useAuth";
 import AdminRoute from "../AdminRoute/AdminRoute";
 import "./Dashboard.css";
@@ -24,7 +25,16 @@ const Dashboard = () => {
         <div className="d-flex">
           <div className="side-menu d-flex justify-content-center align-items-center px-3 mb-5">
             <Nav className="dash-nav">
-              
+              <NavLink
+                activeClassName="dashboard-navText-active"
+                className="dashboard-navText pt-5 mb-5 text-decoration-none text-uppercase"
+                to={`${url}/addnewblogs`}
+              >
+                <div className="icons">
+                  <i className="fas fa-plus-square"></i>
+                </div>{" "}
+                <span className="d-navText">Add New Blogs</span>
+              </NavLink>
               <NavLink
                 activeClassName="dashboard-navText-active"
                 className="dashboard-navText mb-5 text-decoration-none text-uppercase"
@@ -35,18 +45,9 @@ const Dashboard = () => {
                 </div>{" "}
                 <span className="d-navText">Add Review</span>
               </NavLink>
+
               {admin && (
                 <Nav className="dash-nav">
-                  <NavLink
-                    activeClassName="dashboard-navText-active"
-                    className="dashboard-navText mb-5 text-decoration-none text-uppercase"
-                    to={`${url}/addnewblogs`}
-                  >
-                    <div className="icons">
-                      <i className="fas fa-plus-square"></i>
-                    </div>{" "}
-                    <span className="d-navText">Add New Product</span>
-                  </NavLink>
                   <NavLink
                     activeClassName="dashboard-navText-active"
                     className="dashboard-navText mb-5 text-decoration-none text-uppercase pe-3"
@@ -57,8 +58,8 @@ const Dashboard = () => {
                     </div>{" "}
                     <span className="d-navText">Manage&nbsp;</span>
                     <span className="d-navText">All&nbsp;</span>
-                    <span className="d-navText">Products</span>
-                  </NavLink>                 
+                    <span className="d-navText">Blogs</span>
+                  </NavLink>
 
                   <NavLink
                     activeClassName="dashboard-navText-active"
@@ -69,6 +70,17 @@ const Dashboard = () => {
                       <i className="fas fa-user"></i>
                     </div>{" "}
                     <span className="d-navText">Make Admin</span>
+                  </NavLink>
+
+                  <NavLink
+                    activeClassName="dashboard-navText-active"
+                    className="dashboard-navText text-decoration-none text-uppercase pb-5"
+                    to={`${url}/addnewtips`}
+                  >
+                    <div className="icons">
+                      <i className="fas fa-user"></i>
+                    </div>{" "}
+                    <span className="d-navText">Add New Tips</span>
                   </NavLink>
                 </Nav>
               )}
@@ -86,9 +98,9 @@ const Dashboard = () => {
                 <AddReview></AddReview>
               </Route>
 
-              <AdminRoute path={`${path}/addnewblogs`}>
+              <Route path={`${path}/addnewblogs`}>
                 <AddNewBlogs></AddNewBlogs>
-              </AdminRoute>
+              </Route>
 
               <AdminRoute path={`${path}/ManageAllBlogs`}>
                 <ManageAllBlogs></ManageAllBlogs>
@@ -96,6 +108,10 @@ const Dashboard = () => {
 
               <AdminRoute path={`${path}/makeadmin`}>
                 <MakeAdmin></MakeAdmin>
+              </AdminRoute>
+
+              <AdminRoute path={`${path}/addnewtips`}>
+                <Tips></Tips>
               </AdminRoute>
             </Switch>
             {/* 2nd div */}

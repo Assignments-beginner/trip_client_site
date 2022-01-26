@@ -7,7 +7,7 @@ const ManageAllBlogs = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://shrouded-headland-08303.herokuapp.com/products")
+    fetch("https://shrouded-headland-08303.herokuapp.com/blogs")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -19,7 +19,7 @@ const ManageAllBlogs = () => {
       "Are you sure, you want to delete this Product?"
     );
     if (proceed) {
-      fetch(`https://shrouded-headland-08303.herokuapp.com/products/${id}`, {
+      fetch(`https://shrouded-headland-08303.herokuapp.com/blogs/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -39,21 +39,18 @@ const ManageAllBlogs = () => {
   return (
     <div className="pb-5">
       <h3 className="dashboard-sectionTitle text-center text-uppercase">
-        Manage All <span className="text-danger">Products</span>
+        Manage All <span className="text-danger">Blogs</span>
       </h3>
       <h5 className="dashboard-orderTitle text-center text-uppercase mt-3 mb-4">
-        Total <strong className="text-danger">{products.length}</strong> product
+        Total <strong className="text-danger">{products.length}</strong> Blogs
       </h5>
       <div>
         <Table bordered hover>
           <thead className="text-uppercase">
             <tr>
-              <th className="table-text text-center p-3">Name</th>
-              <th className="table-text product-model text-center p-3">
-                Product Model
-              </th>
-              <th className="table-text text-center p-3">Price</th>
-              <th className="table-text text-center p-3">Delete</th>
+              <th className="table-text text-center p-3">Title</th>
+              <th className="table-text status text-center p-3">Status</th>
+              <th className="table-text text-center p-3">Approve / Cancel</th>
             </tr>
           </thead>
           <tbody>
@@ -61,12 +58,6 @@ const ManageAllBlogs = () => {
               <tr key={product._id} product={product}>
                 <td className="table-text text-center">
                   {product.productName}
-                </td>
-                <td className="text-center product-model">
-                  {product.productModel}
-                </td>
-                <td className="table-text text-center">
-                  {product.productPrice}
                 </td>
                 <td className="table-text text-center">
                   <div className="text-center">
