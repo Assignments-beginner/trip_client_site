@@ -72,66 +72,70 @@ const LogIn = () => {
   };
 
   return (
-    <Row className="signin-banner">
-      <Col lg={4} xl={4} sm={12} className="mt-4 mx-auto px-5">
-        <p className="text-uppercase fs-2">
-          Please <span className="text-danger">Sign In</span>{" "}
-        </p>
-        <Form>
-          {/* Email Field */}
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              onClick={removeError}
-              onBlur={emailBlurHandler}
-              type="email"
-              placeholder="Enter Email"
-            />
-          </Form.Group>
-          {/* Password Field */}
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              onClick={removeError}
-              onBlur={passwordBlurHandler}
-              type="password"
-              placeholder="Password"
-            />
-          </Form.Group>
-          {/* Not having an account */}
-          <div className="mb-3">
-            <span>Don't have an account?</span>
-            &nbsp; &nbsp;
-            <Link
-              className="text-danger"
-              style={{ fontWeight: "bolder" }}
-              onClick={removeError}
-              to="/registration"
-            >
-              Create One
-            </Link>
-          </div>
-          {/* Display Error */}
-          <p className="text-danger">{error}</p>
-          {/* Register Button */}
-          <Button onClick={signInHandler} variant="danger" type="submit">
-            Sign In
-          </Button>
-        </Form>
-
-        <div className="mt-3 mb-5 d-grid justify-items-center">
-          <p className="text-secondary mb-3 text-center">Or you can also</p>
-          {/* Button */}
-          <button onClick={googleLoginHandler} className="mx-auto signin-btn">
-            <div className="d-flex align-items-center justify-content-between">
-              <img height="32" width="32" src={google} alt="" />{" "}
-              <span>Continue With Google</span>{" "}
-              <span className="text-white">G</span>
+    <div className="signin-banner">
+      <Row>
+        <Col lg={4} xl={4} sm={12} className="mt-4 mx-auto px-5">
+          <p className="text-uppercase fs-2">
+            Please <span className="text-danger">Sign In</span>{" "}
+          </p>
+          <Form>
+            {/* Email Field */}
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Email</Form.Label>
+              <Form.Control
+                onClick={removeError}
+                onBlur={emailBlurHandler}
+                type="email"
+                placeholder="Enter Email"
+              />
+            </Form.Group>
+            {/* Password Field */}
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                onClick={removeError}
+                onBlur={passwordBlurHandler}
+                type="password"
+                placeholder="Password"
+              />
+            </Form.Group>
+            {/* Not having an account */}
+            <div className="mb-3">
+              <span style={{ fontWeight: "bolder" }}>
+                Don't have an account?
+              </span>
+              <br />
+              <Link
+                className="text-white"
+                style={{ fontWeight: "bolder" }}
+                onClick={removeError}
+                to="/registration"
+              >
+                Create One
+              </Link>
             </div>
-          </button>
-        </div>
-      </Col>
-    </Row>
+            {/* Display Error */}
+            <p className="text-danger">{error}</p>
+            {/* Register Button */}
+            <Button onClick={signInHandler} variant="danger" type="submit">
+              Sign In
+            </Button>
+          </Form>
+
+          <div className="mt-3 mb-5 d-grid justify-items-center">
+            <p className="text-secondary mb-3 text-center">Or you can also</p>
+            {/* Button */}
+            <button onClick={googleLoginHandler} className="mx-auto signin-btn">
+              <div className="d-flex align-items-center justify-content-between">
+                <img height="32" width="32" src={google} alt="" />{" "}
+                <span>Continue With Google</span>{" "}
+                <span className="text-white">G</span>
+              </div>
+            </button>
+          </div>
+        </Col>
+      </Row>
+    </div>
   );
 };
 

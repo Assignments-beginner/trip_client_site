@@ -2,7 +2,7 @@
   width: 100%;
   height: 600px;
   background:
-          /* top, transparent black, faked with gradient */ linear-gradient(
+            /* top, transparent black, faked with gradient */ linear-gradient(
       rgba(255, 255, 255, 0.144),
       rgba(255, 255, 255, 0.144)
     ),
@@ -12,31 +12,11 @@
   overflow: hidden;
 }
 
-.sign-shadow {
-  text-shadow: 2px 2px 0 #000000a2;
-}
-
-.signin-btn {
-  outline: none;
-  border: none;
-  padding: 10px 10px 10px 10px;
-  border-radius: 30px;
-  width: 400px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-.custom-margin {
-  margin-top: 170px;
-}
-
 @media all and (max-width: 688px) {
-  .signin-btn {
-    width: 300px;
-  }
   .signin-banner {
     width: 100%;
     background:
-            /* top, transparent black, faked with gradient */ linear-gradient(
+                /* top, transparent black, faked with gradient */ linear-gradient(
         rgba(255, 255, 255, 0.144),
         rgba(255, 255, 255, 0.144)
       ),

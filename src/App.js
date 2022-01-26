@@ -45,11 +45,9 @@ function App() {
                 <Route path="/registration">
                   <Registration></Registration>
                 </Route>
-
                 <Route path="/sorry">
                   <Sorry></Sorry>
                 </Route>
-
                 <Route path="*">
                   <NotFound></NotFound>
                 </Route>
