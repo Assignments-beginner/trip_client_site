@@ -19,7 +19,9 @@ const Blogs = () => {
     <Container className="py-5">
       <Row className="d-flex">
         <Col xl="9" lg="9" sm="12" className="border border-danger">
-          <h3 className="text-center">Latest Blogs</h3>
+          <h2 className="text-center display-6 text-uppercase mb-5">
+            latest <strong style={{ color: "#ea3c23" }}>blogs</strong>
+          </h2>
         </Col>
         <Col xl="3" lg="3" className="border border-danger">
           <InputGroup className="mb-2">
@@ -180,6 +182,86 @@ const Blogs = () => {
                     how to buy the right backpack, what to pack, protect your
                     data and teach, and give you some other advanced tips and
                     tricks for the road!
+                  </p>
+                </Modal.Body>
+              </Modal>
+            </div>
+            {/* 5//////// */}
+            <div>
+              <button onClick={handleShow} className="tipsButton">
+                <span>HOW TO GET CHEAP AIRFARE</span>
+              </button>
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Body>
+                  <div className="d-flex justify-content-center">
+                    <i
+                      style={{ fontSize: "60px" }}
+                      className="my-3 far fa-lightbulb"
+                    ></i>
+                  </div>
+                  <p
+                    className="px-5 pb-4"
+                    style={{ fontSize: "20px", textAlign: "justify" }}
+                  >
+                    Looking for a cheap flight? The cost of airfare is one of
+                    the main reasons people don’t travel more. However, thanks
+                    to the rise of international budget airlines and deal
+                    finding websites, it’s gotten a lot easier to fly around the
+                    world on the cheap!
+                  </p>
+                </Modal.Body>
+              </Modal>
+            </div>
+            {/* 6//////// */}
+            <div>
+              <button onClick={handleShow} className="tipsButton">
+                <span>GET ACCOMMODATION</span>
+              </button>
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Body>
+                  <div className="d-flex justify-content-center">
+                    <i
+                      style={{ fontSize: "60px" }}
+                      className="my-3 far fa-lightbulb"
+                    ></i>
+                  </div>
+                  <p
+                    className="px-5 pb-4"
+                    style={{ fontSize: "20px", textAlign: "justify" }}
+                  >
+                    Accommodation will be one of your biggest daily expenses –
+                    and lowering that cost can lead to huge savings. To a lot of
+                    people, the choice seems to be either expensive hotels or
+                    cheap hostel dorms. But there are many other options
+                    available to travelers – whether you are a solo traveler,
+                    couple, or family. These articles will help choose the right
+                    accommodation for you, find the best deals, avoid being
+                    scammed, and break out of the hotel/hostel mold.
+                  </p>
+                </Modal.Body>
+              </Modal>
+            </div>
+            {/* 7//////// */}
+            <div>
+              <button onClick={handleShow} className="tipsButton">
+                <span>HANDLE LIFE ON THE TRIP</span>
+              </button>
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Body>
+                  <div className="d-flex justify-content-center">
+                    <i
+                      style={{ fontSize: "60px" }}
+                      className="my-3 far fa-lightbulb"
+                    ></i>
+                  </div>
+                  <p
+                    className="px-5 pb-4"
+                    style={{ fontSize: "20px", textAlign: "justify" }}
+                  >
+                    Long-term travel is one of the most exciting, interesting,
+                    and learning experiences a person can do in their lifetime.
+                    It makes you a far more well-adjusted person, more
+                    open-minded, more independent, and more confident.
                   </p>
                 </Modal.Body>
               </Modal>

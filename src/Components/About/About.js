@@ -4,7 +4,7 @@ import "./About.css";
 const About = () => {
   return (
     <div className="mb-5 pb-3">
-      <h2 className="text-center text-uppercase my-5">
+      <h2 className="display-6 text-center text-uppercase my-5">
         about <strong style={{ color: "#ea3c23" }}>us</strong>
       </h2>
       {/* AWARD////////////////////////////////////////////*/}
@@ -71,7 +71,7 @@ const About = () => {
       </Row>
       {/* TOUR GUIDE///////////////////////////////////////*/}
       <Container className="mb-3 px-5">
-        <h2 className="text-center text-uppercase mt-3 mb-5">
+        <h2 className="display-6 text-center text-uppercase mt-3 mb-5">
           why choose <strong style={{ color: "#ea3c23" }}>us</strong>
         </h2>
         <Row className="tourGuides px-3">

@@ -4,7 +4,7 @@ import "./Destinations.css";
 const Destinations = () => {
   return (
     <div>
-      <h2 className="text-center text-uppercase my-5">
+      <h2 className="display-6 text-center text-uppercase my-5">
         our <strong style={{ color: "#ea3c23" }}>top</strong> destinations
       </h2>
       <Container className="mb-5 pb-5">
