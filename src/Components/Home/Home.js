@@ -11,6 +11,7 @@ import slideTwo from "../../Images/slide2.png";
 import slideThree from "../../Images/slide3.png";
 import About from "../About/About";
 import Destinations from "../Destinations/Destinations";
+import Blogs from "../Blogs/Blogs";
 import "./Home.css";
 const Home = () => {
   return (
@@ -20,7 +21,6 @@ const Home = () => {
           <Carousel.Item>
             <img
               style={{ opacity: "0.5" }}
-              
               className="d-block w-100 banners"
               src={slideOne}
               alt="First slide"
@@ -35,21 +35,21 @@ const Home = () => {
           <Carousel.Item>
             <img
               style={{ opacity: "0.5" }}
-              
               className="d-block w-100 banners"
               src={slideTwo}
               alt="Second slide"
             />
 
             <Carousel.Caption>
-              <h1 className="text-uppercase tiny-shadow bannerTitle">Explore</h1>
+              <h1 className="text-uppercase tiny-shadow bannerTitle">
+                Explore
+              </h1>
               <h4 className="text-uppercase bannerText">check our blogs</h4>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               style={{ opacity: "0.5" }}
-              
               className="d-block w-100 banners"
               src={slideThree}
               alt="Third slide"
@@ -64,6 +64,7 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+      <Blogs />
       <About />
       <Destinations />
       {/* CLIENTS///////////////////////////////////////////////////////////*/}

@@ -1,15 +1,8 @@
-.radius {
-  border-radius: 30px;
-}
-.custom-border {
-    border: white 10px solid;
-    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 7px;
-}
-
-.tiny-shadow {
-  text-shadow: 4px 3px 0 #000000a2;
-}
-
-.text-justify {
-  text-align: justify;
+.tipsButton {
+  border: none;
+  background-color: white;
+  width: 100%;
+  outline: 1px solid black;
+  /* border-radius: 5px; */
+  padding: 5px 0px 5px 0px;
 }
