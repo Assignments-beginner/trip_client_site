@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -76,7 +76,7 @@ const Footer = () => {
           <p className="text-white">California St, Stockton, United States</p>
 
           <p className="text-white">
-            {" "}
+            
             <i style={{ color: "#ea3c23" }} className="fas fa-phone"></i> +1
             209-507-5152
           </p>
@@ -90,9 +90,9 @@ const Footer = () => {
           <Container>
             <div className="text-white">
               <span className="d-block text-center text-uppercase fs-5">
-                {" "}
-                <strong style={{ color: "#EA3C23" }}>trip</strong> toe{" "}
-              </span>{" "}
+                
+                <strong style={{ color: "#EA3C23" }}>trip</strong> expo
+              </span>
               <span className="copyright">
                 Copyright &copy; 2021 All Rights Reserved
               </span>

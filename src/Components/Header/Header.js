@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import travelBoy from "../../Images/travelBoy.png";
 import "./Header.css";
 const Header = () => {
   return (
@@ -11,11 +12,21 @@ const Header = () => {
             style={{ lineHeight: "1" }}
             className="text-center text-uppercase text-white"
           >
-            <span className="d-block fs-3">
-              {" "}
-              <strong style={{ color: "#EA3C23" }}>trip</strong> toe{" "}
-            </span>{" "}
-            <span className="fs-6 d-block text-white text-uppercase">
+            <span className="d-block fs-4">
+              <strong style={{ color: "#EA3C23" }}>trip</strong>
+              <img
+                width="30"
+                height="50"
+                className="ms-2"
+                src={travelBoy}
+                alt=""
+              />
+              expo
+            </span>
+            <span
+              style={{ fontSize: "12px" }}
+              className="mt-2 d-block text-white text-uppercase"
+            >
               adventure
             </span>
           </Navbar.Brand>
