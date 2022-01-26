@@ -17,3 +17,9 @@
 .dropnav-active {
   color: #ea3c23;
 }
+
+@media all and (max-width: 688px) {
+  .travelBoy {
+    display: none;
+  }
+}

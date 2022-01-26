@@ -11,7 +11,7 @@ const About = () => {
       <Container className="award mb-5">
         <div className="px-5">
           <h1 className="text-center text-uppercase awardText">
-            Trip <strong style={{ color: "#ea3c23" }}>toe</strong> is an award
+            Trip <strong style={{ color: "#ea3c23" }}>expo</strong> is an award
             winning top Tour Booking Platform
           </h1>
         </div>

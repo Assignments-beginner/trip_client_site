@@ -13,11 +13,12 @@ const Header = () => {
             className="text-center text-uppercase text-white"
           >
             <span className="d-block fs-4">
-              <strong style={{ color: "#EA3C23" }}>trip</strong>
+              <strong style={{ color: "#EA3C23" }}>trip&nbsp;</strong>
               <img
+                
                 width="30"
                 height="50"
-                className="ms-2"
+                className="ms-1 travelBoy"
                 src={travelBoy}
                 alt=""
               />
@@ -32,8 +33,8 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-5 me-auto align-items-center">
+          <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
+            <Nav className="align-items-center">
               <NavLink
                 activeClassName="navs-active"
                 className="fs-6 navs me-3 text-decoration-none"
