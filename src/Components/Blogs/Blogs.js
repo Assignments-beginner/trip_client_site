@@ -8,6 +8,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
+import ApprovedBlogs from "../Blogs/ApprovedBlogs/ApprovedBlogs";
 import "../Blogs/Blogs.css";
 
 const Blogs = () => {
@@ -28,10 +29,11 @@ const Blogs = () => {
   return (
     <Container className="py-5">
       <Row className="d-flex">
-        <Col xl="9" lg="9" sm="12" className="border border-danger">
+        <Col xl="9" lg="9" sm="12">
           <h2 className="text-center display-6 text-uppercase mb-5">
             latest <strong style={{ color: "#ea3c23" }}>blogs</strong>
           </h2>
+          <ApprovedBlogs />
         </Col>
         <Col xl="3" lg="3" className="tipsBar">
           <InputGroup className="mb-2">
