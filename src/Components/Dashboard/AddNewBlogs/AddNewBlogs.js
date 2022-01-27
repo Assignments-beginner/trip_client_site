@@ -18,7 +18,7 @@ const AddNewBlogs = () => {
           Swal.fire({
             position: "center",
             icon: "success",
-            title: "New blog added successfully!",
+            title: "New blog added successfully! Admin will post this blog later.",
             showConfirmButton: false,
             timer: 2500,
           });

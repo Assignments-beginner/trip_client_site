@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Carousel,
   Button,
@@ -15,11 +15,18 @@ import Blogs from "../Blogs/Blogs";
 import "./Home.css";
 const Home = () => {
   const [email, setEmail] = useState("");
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    fetch("https://shrouded-headland-08303.herokuapp.com/reviews")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setEmail("");
-  }
+  };
   return (
     <div className="pb-4">
       <div className="bg-dark">
@@ -79,24 +86,25 @@ const Home = () => {
           our beloved <strong style={{ color: "#ea3c23" }}>clients</strong>
         </h4>
         <div className="clients">
-          {/* Review  */}
-          <div className="text-center p-5">
-            <div>
-              <img
-                width="128"
-                height="128"
-                className="rounded-circle mb-4 shadow"
-                src="https://randomuser.me/api/portraits/women/51.jpg"
-                alt=""
-              />
+          {reviews.slice(-3).map((review) => (
+            <div key={review._id} review={review} className="text-center p-5">
+              <div>
+                <img
+                  width="128"
+                  height="128"
+                  className="rounded-circle mb-4 shadow"
+                  src={review.userImg}
+                  alt=""
+                />
+              </div>
+              <div>
+                <strong>{review.userName}</strong>
+                <p>{review.userReview}</p>
+              </div>
             </div>
-            <div>
-              <strong>Virginia Apgar</strong>
-              <p>Nice and Classy, everything is available.</p>
-            </div>
-          </div>
+          ))}
           {/* Review  */}
-          <div className="text-center p-5">
+          {/* <div className="text-center p-5">
             <div>
               <img
                 width="128"
@@ -110,9 +118,9 @@ const Home = () => {
               <strong>Josh Barret</strong>
               <p>Awesome trip offers and frendly behaviour.</p>
             </div>
-          </div>
+          </div> */}
           {/* Review  */}
-          <div className="text-center p-5">
+          {/* <div className="text-center p-5">
             <div>
               <img
                 width="128"
@@ -126,7 +134,7 @@ const Home = () => {
               <strong>Ana Aslan</strong>
               <p>Wonderful travel plans for families.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
       {/* NewsLetter  */}
@@ -145,10 +153,11 @@ const Home = () => {
               placeholder="Enter Your Email"
               aria-label="Enter Your Email"
               value={email}
-        onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <Button
-            type="submit" onClick={handleSubmit}
+              type="submit"
+              onClick={handleSubmit}
               className="text-uppercase"
               variant="danger px-4"
               id="button-addon2"
