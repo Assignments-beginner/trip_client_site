@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "react-rating";
 import "../ApprovedBlogs/ApprovedBlogs.css";
@@ -55,9 +55,11 @@ const ApprovedBlogs = () => {
                     </strong>
 
                     <div className="mt-3">
-                      <span className="text-danger text-center">
-                        Read more...
-                      </span>
+                      <Link to={`/singleblog/${blog._id}`} className="text-decoration-none">
+                        <span className="text-danger text-center">
+                          Read more...
+                        </span>
+                      </Link>
 
                       <div className="blogCost mt-3">
                         <span

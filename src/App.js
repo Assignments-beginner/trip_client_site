@@ -14,6 +14,7 @@ import NotFound from "./Components/NotFound/NotFound";
 import Sorry from "./Components/Sorry/Sorry";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import SingleTip from "./Components/Blogs/SingleTip/SingleTip";
+import SingleBlog from "./Components/Blogs/SingleBlog/SingleBlog";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
                 <Route path="/singletip/:id">
                   <SingleTip></SingleTip>
                 </Route>
+                <PrivateRoute path="/singleblog/:id">
+                  <SingleBlog></SingleBlog>
+                </PrivateRoute>
                 <Route path="/destinations">
                   <Destinations></Destinations>
                 </Route>
