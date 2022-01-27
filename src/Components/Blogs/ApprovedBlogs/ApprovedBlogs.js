@@ -33,6 +33,7 @@ const ApprovedBlogs = () => {
             {blogs.map((blog) => (
               <Col key={blog._id} blog={blog} xl={4} lg={4}>
                 <Card
+                  className="h-100"
                   style={{
                     borderStyle: "none",
                     boxShadow:
@@ -46,60 +47,49 @@ const ApprovedBlogs = () => {
                     src={blog.blogImg}
                   />
                   <Card.Body className="p-4">
-                    <Card.Text className="d-flex justify-content-between align-items-center">
-                      {" "}
-                      <div className="d-flex align-items-center">
-                        <strong
-                          className="text-dark text-center text-uppercase"
-                          style={{ fontSize: "12px" }}
+                    <strong
+                      className="text-dark text-uppercase"
+                      style={{ fontSize: "12px" }}
+                    >
+                      {blog.blogTitle}
+                    </strong>
+
+                    <div className="mt-3">
+                      <span className="text-danger text-center">
+                        Read more...
+                      </span>
+
+                      <div className="blogCost mt-3">
+                        <span
+                          style={{ fontSize: "18px" }}
+                          className="text-dark"
                         >
-                          {blog.blogTitle}
-                        </strong>
+                          ${blog.blogCost}
+                        </span>
+
+                        <Rating
+                          style={{ fontSize: "12px" }}
+                          initialRating={blog.blogRating}
+                          readonly
+                          emptySymbol="far fa-star text-danger"
+                          fullSymbol="fas fa-star text-danger"
+                        />
                       </div>
-                    </Card.Text>
 
-                    <span className="text-danger text-center">Read more...</span>
+                      <div className="mt-4">
+                        <img
+                          className="rounded-circle user-img"
+                          width={26}
+                          height={26}
+                          src={user.photoURL}
+                          alt=""
+                        />
 
-                    <Card.Text>
-                      <h3>{blog.blogPrice}</h3>
-                    </Card.Text>
-
-                    <div className="blogCost">
-                      <span style={{ fontSize: "18px" }} className="text-dark">
-                        ${blog.blogCost}
-                      </span>
-
-                      <Rating
-                        style={{ fontSize: "12px" }}
-                        initialRating={blog.blogRating}
-                        readonly
-                        emptySymbol="far fa-star text-danger"
-                        fullSymbol="fas fa-star text-danger"
-                      />
+                        <span style={{ fontSize: "14px" }}>
+                          &nbsp;&nbsp;{user.displayName}
+                        </span>
+                      </div>
                     </div>
-
-                    <div className="mt-4">
-                      <img
-                        className="rounded-circle user-img"
-                        width={26}
-                        height={26}
-                        src={user.photoURL}
-                        alt=""
-                      />
-
-                      <span style={{ fontSize: "14px" }}>
-                        &nbsp;&nbsp;{user.displayName}
-                      </span>
-                    </div>
-
-                    {/*  <Link
-                    to={`/singleblog/${blog._id}`}
-                    className="mt-auto"
-                  >
-                    <Button className="mt-3 px-4" variant="danger">
-                      Details
-                    </Button>
-                  </Link> */}
                   </Card.Body>
                 </Card>
               </Col>
