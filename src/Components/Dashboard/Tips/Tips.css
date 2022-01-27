@@ -1,7 +1,10 @@
 .newTips-form {
   width: 50%;
 }
-
+.swal2-popup {
+  font-size: 10px !important;
+  font-weight: 20 !important;
+}
 @media all and (max-width: 688px) {
   .dashboard-sectionTitle {
     font-size: 20px;

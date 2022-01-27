@@ -1,4 +1,4 @@
-GET INSPIRED
+/* GET INSPIRED
 Planning a trip and being on the road is a lot easier than you think. Its the decision to take that step out the door that is the hardest part. It requires the  most change. You are leaving your old life behind for a new one.
 
 SAVE MONEY FOR ANY TRIP
@@ -22,4 +22,4 @@ scammed, and break out of the hotel/hostel mold.
 HANDLE LIFE ON THE TRIP
 Long-term travel is one of the most exciting, interesting, and learning experiences a person can do in their lifetime. It makes you a far more well-adjusted person, more open-minded, more independent, and more confident.
 
-
+ */
