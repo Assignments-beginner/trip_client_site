@@ -78,7 +78,7 @@ const Dashboard = () => {
                     to={`${url}/addnewtips`}
                   >
                     <div className="icons">
-                      <i className="fas fa-user"></i>
+                      <i className="far fa-lightbulb"></i>
                     </div>{" "}
                     <span className="d-navText">Add New Tips</span>
                   </NavLink>

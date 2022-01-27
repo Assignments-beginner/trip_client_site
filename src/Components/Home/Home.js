@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Carousel,
   Button,
@@ -14,6 +14,12 @@ import Destinations from "../Destinations/Destinations";
 import Blogs from "../Blogs/Blogs";
 import "./Home.css";
 const Home = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setEmail("");
+  }
   return (
     <div className="pb-4">
       <div className="bg-dark">
@@ -138,8 +144,11 @@ const Home = () => {
             <FormControl
               placeholder="Enter Your Email"
               aria-label="Enter Your Email"
+              value={email}
+        onChange={(e) => setEmail(e.target.value)}
             />
             <Button
+            type="submit" onClick={handleSubmit}
               className="text-uppercase"
               variant="danger px-4"
               id="button-addon2"

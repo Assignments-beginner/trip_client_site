@@ -16,6 +16,13 @@ const Blogs = () => {
   const handleShow = () => setShow(true);
   const [tips, setTips] = useState([]);
 
+  const [search, setSearch] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSearch("");
+  };
+
   useEffect(() => {
     fetch("https://shrouded-headland-08303.herokuapp.com/tips")
       .then((res) => res.json())
@@ -36,8 +43,15 @@ const Blogs = () => {
               placeholder="Search"
               aria-label="Search"
               aria-describedby="basic-addon2"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
-            <Button variant="danger" id="button-addon2">
+            <Button
+              type="submit"
+              onClick={handleSubmit}
+              variant="danger"
+              id="button-addon2"
+            >
               <i className="fas fa-search"></i>
             </Button>
           </InputGroup>
@@ -89,7 +103,7 @@ const Blogs = () => {
                 <Modal show={show} onHide={handleClose}>
                   <Modal.Body>
                     <div className="d-flex justify-content-center py-4">
-                      <i class="display-4 far fa-lightbulb"></i>
+                      <i className="display-4 far fa-lightbulb"></i>
                     </div>
                     <p
                       className="px-5 pb-4"

@@ -10,6 +10,7 @@ const MakeAdmin = () => {
   };
 
   const handleAdminSubmit = (e) => {
+    e.preventDefault();
     const user = { email };
     fetch("https://shrouded-headland-08303.herokuapp.com/users/admin", {
       method: "PUT",
@@ -32,7 +33,7 @@ const MakeAdmin = () => {
         }
       });
 
-    e.preventDefault();
+    // e.preventDefault();
   };
 
   return (
