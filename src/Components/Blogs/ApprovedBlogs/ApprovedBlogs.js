@@ -3,8 +3,10 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "react-rating";
 import "../ApprovedBlogs/ApprovedBlogs.css";
+import useAuth from "../../../Hooks/useAuth";
 
 const ApprovedBlogs = () => {
+  const { user } = useAuth();
   const [blogs, setBlogs] = useState([]);
   const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
@@ -38,15 +40,9 @@ const ApprovedBlogs = () => {
                   }}
                 >
                   <Card.Img
-                    style={{
-                      borderWidth: "5px",
-                      borderStyle: "solid",
-                      borderImage: "linear-gradient(75deg, #d9534f, #4d0000) 1",
-                    }}
                     width="340"
                     height="200"
                     variant="top"
-                    className="p-3"
                     src={blog.blogImg}
                   />
                   <Card.Body className="p-4">
@@ -54,24 +50,47 @@ const ApprovedBlogs = () => {
                       {" "}
                       <div className="d-flex align-items-center">
                         <strong
-                          className="text-danger text-uppercase"
-                          style={{ fontSize: "18px" }}
+                          className="text-dark text-center text-uppercase"
+                          style={{ fontSize: "12px" }}
                         >
                           {blog.blogTitle}
                         </strong>
                       </div>
                     </Card.Text>
 
+                    <span className="text-danger text-center">Read more...</span>
+
                     <Card.Text>
                       <h3>{blog.blogPrice}</h3>
                     </Card.Text>
 
-                    <Rating
-                      initialRating={blog.blogRating}
-                      readonly
-                      emptySymbol="far fa-star text-danger"
-                      fullSymbol="fas fa-star text-danger"
-                    />
+                    <div className="blogCost">
+                      <span style={{ fontSize: "18px" }} className="text-dark">
+                        ${blog.blogCost}
+                      </span>
+
+                      <Rating
+                        style={{ fontSize: "12px" }}
+                        initialRating={blog.blogRating}
+                        readonly
+                        emptySymbol="far fa-star text-danger"
+                        fullSymbol="fas fa-star text-danger"
+                      />
+                    </div>
+
+                    <div className="mt-4">
+                      <img
+                        className="rounded-circle user-img"
+                        width={26}
+                        height={26}
+                        src={user.photoURL}
+                        alt=""
+                      />
+
+                      <span style={{ fontSize: "14px" }}>
+                        &nbsp;&nbsp;{user.displayName}
+                      </span>
+                    </div>
 
                     {/*  <Link
                     to={`/singleblog/${blog._id}`}

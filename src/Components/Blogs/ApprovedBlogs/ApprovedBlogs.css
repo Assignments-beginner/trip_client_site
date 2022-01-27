@@ -1,3 +1,9 @@
+.blogCost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .pagination {
   font-size: 22px;
 }
