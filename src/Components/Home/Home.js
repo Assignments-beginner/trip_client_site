@@ -81,13 +81,17 @@ const Home = () => {
       <About />
       <Destinations />
       {/* CLIENTS///////////////////////////////////////////////////////////*/}
-      <Container>
-        <h4 className="text-center text-uppercase pt-4 pb-4 display-6">
+      <Container className="pb-5">
+        <h4 className="text-center text-uppercase pt-4 pb-5 display-6">
           our beloved <strong style={{ color: "#ea3c23" }}>clients</strong>
         </h4>
         <div className="clients">
           {reviews.slice(-3).map((review) => (
-            <div key={review._id} review={review} className="text-center p-5">
+            <div
+              key={review._id}
+              review={review}
+              className="text-center client"
+            >
               <div>
                 <img
                   width="128"
@@ -103,38 +107,6 @@ const Home = () => {
               </div>
             </div>
           ))}
-          {/* Review  */}
-          {/* <div className="text-center p-5">
-            <div>
-              <img
-                width="128"
-                height="128"
-                className="rounded-circle mb-4 shadow"
-                src="https://randomuser.me/api/portraits/men/78.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <strong>Josh Barret</strong>
-              <p>Awesome trip offers and frendly behaviour.</p>
-            </div>
-          </div> */}
-          {/* Review  */}
-          {/* <div className="text-center p-5">
-            <div>
-              <img
-                width="128"
-                height="128"
-                className="rounded-circle mb-4 shadow"
-                src="https://randomuser.me/api/portraits/women/52.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <strong>Ana Aslan</strong>
-              <p>Wonderful travel plans for families.</p>
-            </div>
-          </div> */}
         </div>
       </Container>
       {/* NewsLetter  */}

@@ -8,7 +8,7 @@ const About = () => {
         about <strong style={{ color: "#ea3c23" }}>us</strong>
       </h2>
       {/* AWARD////////////////////////////////////////////*/}
-      <Container className="award mb-5">
+      <Container className="award mb-5 border border-danger">
         <div className="px-5">
           <h1 className="text-center text-uppercase awardText">
             Trip <strong style={{ color: "#ea3c23" }}>expo</strong> is an award
@@ -51,7 +51,7 @@ const About = () => {
         </div>
       </Container>
       {/* DISCOUNT/////////////////////////////////////////*/}
-      <Row className="tourPlan mb-5 px-5">
+      <Container className="tourPlan mb-5 px-5">
         <Col className="discount">
           <h3 className="discountText p-5 m-3 display-3">
             <strong style={{ color: "#ea3c23" }}>30%</strong> <br /> OFF
@@ -68,9 +68,9 @@ const About = () => {
             and plan your outdoor adventures with the local weather in mind.
           </p>
         </Col>
-      </Row>
+      </Container>
       {/* TOUR GUIDE///////////////////////////////////////*/}
-      <Container className="mb-3 px-5">
+      <Container className="mb-3">
         <h2 className="display-6 text-center text-uppercase mt-3 mb-5">
           why choose <strong style={{ color: "#ea3c23" }}>us</strong>
         </h2>

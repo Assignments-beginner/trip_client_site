@@ -9,6 +9,12 @@
   display: flex;
   justify-content: center;
 }
+.client {
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 @media all and (max-width: 688px) {
   .banners {
     height: 150px;
@@ -25,7 +31,8 @@
   }
   .clients {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
