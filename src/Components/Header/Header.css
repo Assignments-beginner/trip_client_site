@@ -22,11 +22,19 @@
   margin-left: 25px;
 }
 
+.signIn {
+  margin-left: 30px;
+}
+
 @media all and (max-width: 688px) {
   .travelBoy {
     display: none;
   }
   .userBar {
     margin-left: 0px;
+  }
+  .signIn {
+    margin-left: 0px;
+    text-align: center;
   }
 }

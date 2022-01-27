@@ -67,7 +67,6 @@ const AddNewBlogs = () => {
 
         <textarea
           style={{ outline: "none" }}
-          // maxlength="150"
           className="mb-3 py-2 px-3"
           placeholder="Description"
           {...register("blogDescription")}

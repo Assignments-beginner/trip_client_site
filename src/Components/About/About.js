@@ -22,7 +22,7 @@ const About = () => {
               <Link className="text-decoration-none">
                 <div className="adventure d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    adventure <br /> tour
+                    top rated <br /> trips
                   </span>
                 </div>
               </Link>
@@ -31,7 +31,7 @@ const About = () => {
               <Link className="text-decoration-none">
                 <div className="wildlife d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    wildlife <br /> tour
+                    long <br /> trips
                   </span>
                 </div>
               </Link>
@@ -42,7 +42,7 @@ const About = () => {
               <Link className="text-decoration-none">
                 <div className="country d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    country <br /> tour
+                    short <br /> trips
                   </span>
                 </div>
               </Link>
@@ -51,7 +51,7 @@ const About = () => {
               <Link className="text-decoration-none">
                 <div className="ancient d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    ancient <br /> tour
+                    expensive <br /> trips
                   </span>
                 </div>
               </Link>

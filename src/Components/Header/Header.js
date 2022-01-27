@@ -84,7 +84,7 @@ const Header = () => {
               {!user?.email && (
                 <NavLink
                   activeClassName="navs-active"
-                  className="fs-6 navs text-center text-uppercase text-decoration-none"
+                  className="fs-6 navs text-center text-uppercase text-decoration-none signIn"
                   to="/signin"
                 >
                   Sign In

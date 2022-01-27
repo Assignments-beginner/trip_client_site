@@ -9,7 +9,7 @@ const ApprovedBlogs = () => {
   const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
 
-  const size = 6;
+  const size = 10;
 
   useEffect(() => {
     fetch(
@@ -28,6 +28,7 @@ const ApprovedBlogs = () => {
       <div className="pb-5">
         <Container className="w-100 mb-5">
           <Row className="g-5">
+            {/* {blogs.filter(blog => blog.blogStatus == Approved) => ( */}
             {blogs.map((blog) => (
               <Col key={blog._id} blog={blog} xl={4} lg={4}>
                 <Card
