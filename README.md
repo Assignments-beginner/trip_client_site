@@ -1,14 +1,14 @@
-# TRIP TOE IS AN AWARD WINNING TOP TOUR BOOKING PLATFORM.
+# TRIP EXPO IS AN AWARD WINNING TOP TRAVEL BLOG PLATFORM.
 
-<a href="https://tour-site-mongodb-nodejs.netlify.app/">Check Here...</a>
+<a href="https://trip-expo.netlify.app/">Check Here...</a>
 
-<li>Plan your trips with us.</li>
+<li>It’s a MERN stack travel blog web application.</li>
 <br />
-<li>We have over 2000 travel guide worldwide.</li>
+<li>I have used the most famous frameworks and libraries to build this react web application such as React JS, React-Router, React-Hook-form, React-Bootstrap.
+</li>
 <br />
-<li>We are giving special offers on out top destinations.</li>
+<li>For authentication, I have used Google Firebase and for backend MongoDB database with Node JS including Express JS and for live hosting Netlify and Heroku.</li>
 <br />
-<li>Check out our more travel blogs</li>
-<br />
-<li>You can enjoy and explore with your friends & family in our special trips.</li>
-
+<li>
+Checkout the <a href="https://github.com/Assignments-beginner/trip_server">Server</a> code.
+</li>
