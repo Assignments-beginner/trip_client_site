@@ -90,7 +90,7 @@ const Home = () => {
             <div
               key={review._id}
               review={review}
-              className="text-center client"
+              className="text-center client m-3"
             >
               <div>
                 <img

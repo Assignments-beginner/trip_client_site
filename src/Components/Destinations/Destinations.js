@@ -7,7 +7,7 @@ const Destinations = () => {
       <h2 className="display-6 text-center text-uppercase my-5">
         our <strong style={{ color: "#ea3c23" }}>top</strong> destinations
       </h2>
-      <Container className="mb-5 pb-5">
+      <Container className="mb-5 pb-5 px-4">
         <Row>
           <Col className="london bg-secondary m-2 box">
             <div className="p-5">

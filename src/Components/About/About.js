@@ -8,7 +8,7 @@ const About = () => {
         about <strong style={{ color: "#ea3c23" }}>us</strong>
       </h2>
       {/* AWARD////////////////////////////////////////////*/}
-      <Container className="award mb-5 border border-danger">
+      <Container className="award mb-5">
         <div className="px-5">
           <h1 className="text-center text-uppercase awardText">
             Trip <strong style={{ color: "#ea3c23" }}>expo</strong> is an award
@@ -59,13 +59,15 @@ const About = () => {
         </Col>
         <Col className="px-5">
           <h1 className="text-center text-uppercase display-4">
-            Plan Your <br /> <strong style={{ color: "#ea3c23" }}>Trip</strong> with us
+            Plan Your <br /> <strong style={{ color: "#ea3c23" }}>Trip</strong>{" "}
+            with us
           </h1>
           <p className="text-justify mt-4">
             Use our free trip planner to get a personalized day by day itinerary
-            for your vacation. <strong>Trip Expo</strong> is the new way to plan your holiday. Try
-            to pick activities and places suitable to your family's interests,
-            and plan your outdoor adventures with the local weather in mind.
+            for your vacation. <strong>Trip Expo</strong> is the new way to plan
+            your holiday. Try to pick activities and places suitable to your
+            family's interests, and plan your outdoor adventures with the local
+            weather in mind.
           </p>
         </Col>
       </Container>

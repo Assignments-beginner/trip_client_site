@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Container,
   Row,
@@ -6,16 +7,11 @@ import {
   InputGroup,
   FormControl,
   Button,
-  Modal,
 } from "react-bootstrap";
 import "../Blogs/Blogs.css";
 
 const Blogs = () => {
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const [tips, setTips] = useState([]);
-
   const [search, setSearch] = useState("");
 
   const handleSubmit = (e) => {
@@ -37,7 +33,7 @@ const Blogs = () => {
             latest <strong style={{ color: "#ea3c23" }}>blogs</strong>
           </h2>
         </Col>
-        <Col xl="3" lg="3">
+        <Col xl="3" lg="3" className="tipsBar">
           <InputGroup className="mb-2">
             <FormControl
               placeholder="Search"
@@ -97,22 +93,9 @@ const Blogs = () => {
             {/* 1//////// */}
             {tips.map((tip) => (
               <div key={tip._id} tip={tip}>
-                <button onClick={handleShow} className="tipsButton mb-2">
-                  {tip.tipsTitle}
-                </button>
-                <Modal show={show} onHide={handleClose}>
-                  <Modal.Body>
-                    <div className="d-flex justify-content-center py-4">
-                      <i className="display-4 far fa-lightbulb"></i>
-                    </div>
-                    <p
-                      className="px-5 pb-4"
-                      style={{ fontSize: "20px", textAlign: "justify" }}
-                    >
-                      {tip.tipsDescription}
-                    </p>
-                  </Modal.Body>
-                </Modal>
+                <Link to={`/singletip/${tip._id}`}>
+                  <button className="tipsButton mb-2">{tip.tipsTitle}</button>
+                </Link>
               </div>
             ))}
           </aside>
