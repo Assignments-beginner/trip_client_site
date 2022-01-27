@@ -3,10 +3,8 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Rating from "react-rating";
 import "../ApprovedBlogs/ApprovedBlogs.css";
-import useAuth from "../../../Hooks/useAuth";
 
 const ApprovedBlogs = () => {
-  const { user } = useAuth();
   const [blogs, setBlogs] = useState([]);
   const [page, setPage] = useState(0);
   const [pageCount, setPageCount] = useState(0);
@@ -55,7 +53,10 @@ const ApprovedBlogs = () => {
                     </strong>
 
                     <div className="mt-3">
-                      <Link to={`/singleblog/${blog._id}`} className="text-decoration-none">
+                      <Link
+                        to={`/singleblog/${blog._id}`}
+                        className="text-decoration-none"
+                      >
                         <span className="text-danger text-center">
                           Read more...
                         </span>
@@ -83,12 +84,12 @@ const ApprovedBlogs = () => {
                           className="rounded-circle user-img"
                           width={26}
                           height={26}
-                          src={user.photoURL}
+                          src={blog.blogPeopleImg}
                           alt=""
                         />
 
                         <span style={{ fontSize: "14px" }}>
-                          &nbsp;&nbsp;{user.displayName}
+                          &nbsp;&nbsp;{blog.blogPeople}
                         </span>
                       </div>
                     </div>

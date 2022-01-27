@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Col, Container } from "react-bootstrap";
-import useAuth from "../../../Hooks/useAuth";
 import { Link } from "react-router-dom";
 
 const SingleBlog = () => {
-  const { user } = useAuth();
   const { id } = useParams();
   const [singleBlog, setSingleBlog] = useState([]);
   useEffect(() => {
@@ -39,15 +37,12 @@ const SingleBlog = () => {
               className="rounded-circle user-img me-2"
               width={42}
               height={42}
-              src={user.photoURL}
+              src={singleBlog.blogPeopleImg}
               alt=""
             />
-            <span className="text-uppercase">{user.displayName}</span>
+            <span className="text-uppercase">{singleBlog.blogPeople}</span>
           </div>
-          <Link
-            className="pt-5 text-decoration-none text-danger"
-            to="/home"
-          >
+          <Link className="pt-5 text-decoration-none text-danger" to="/home">
             Back To Home
           </Link>
         </Container>

@@ -4,10 +4,8 @@ import { Button, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import "./AddNewBlogs.css";
-import useAuth from "../../../Hooks/useAuth";
 
 const AddNewBlogs = () => {
-  const { user } = useAuth();
   const { register, handleSubmit, reset } = useForm();
 
   const onSubmit = (data) => {
@@ -42,16 +40,31 @@ const AddNewBlogs = () => {
         <input
           style={{ outline: "none" }}
           className="mb-3 py-2 px-3"
-          placeholder="Title"
+          placeholder="Your Name"
+          {...register("blogPeople")}
+        />
+
+        <input
+          style={{ outline: "none" }}
+          className="mb-3 py-2 px-3"
+          placeholder="Your Image URL"
+          {...register("blogPeopleImg")}
+        />
+
+        <input
+          style={{ outline: "none" }}
+          className="mb-3 py-2 px-3"
+          placeholder="Blog Title"
           {...register("blogTitle")}
         />
 
         <input
           style={{ outline: "none" }}
           className="mb-3 py-2 px-3"
-          placeholder="Image URL"
+          placeholder="Blog Image URL"
           {...register("blogImg")}
         />
+
         <textarea
           style={{ outline: "none" }}
           // maxlength="150"
@@ -84,15 +97,6 @@ const AddNewBlogs = () => {
           placeholder="Status"
           {...register("blogStatus")}
         />
-
-        <input
-          style={{ outline: "none" }}
-          className="mb-3 py-2 px-3 d-none"
-          defaultValue={user.displayName}
-          placeholder="people"
-          {...register("blogPeople")}
-        />
-
         <Button className="w-25" variant="danger" type="submit">
           ADD
         </Button>
