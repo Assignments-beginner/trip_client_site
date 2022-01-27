@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./About.css";
 const About = () => {
   return (
@@ -12,40 +13,48 @@ const About = () => {
         <div className="px-5">
           <h1 className="text-center text-uppercase awardText">
             Trip <strong style={{ color: "#ea3c23" }}>expo</strong> is an award
-            winning top Tour Booking Platform
+            winning top Travel blog Platform
           </h1>
         </div>
         <div className="adventures px-5">
           <Row>
             <Col>
-              <div className="adventure d-flex align-items-center justify-content-center">
-                <span className="about-shadow text-center text-white text-uppercase fs-4">
-                  adventure <br /> tour
-                </span>
-              </div>
+              <Link className="text-decoration-none">
+                <div className="adventure d-flex align-items-center justify-content-center">
+                  <span className="about-shadow text-center text-white text-uppercase fs-4">
+                    adventure <br /> tour
+                  </span>
+                </div>
+              </Link>
             </Col>
             <Col>
-              <div className="wildlife d-flex align-items-center justify-content-center">
-                <span className="about-shadow text-center text-white text-uppercase fs-4">
-                  wildlife <br /> tour
-                </span>
-              </div>
+              <Link className="text-decoration-none">
+                <div className="wildlife d-flex align-items-center justify-content-center">
+                  <span className="about-shadow text-center text-white text-uppercase fs-4">
+                    wildlife <br /> tour
+                  </span>
+                </div>
+              </Link>
             </Col>
           </Row>
           <Row>
             <Col>
-              <div className="country d-flex align-items-center justify-content-center">
-                <span className="about-shadow text-center text-white text-uppercase fs-4">
-                  country <br /> tour
-                </span>
-              </div>
+              <Link className="text-decoration-none">
+                <div className="country d-flex align-items-center justify-content-center">
+                  <span className="about-shadow text-center text-white text-uppercase fs-4">
+                    country <br /> tour
+                  </span>
+                </div>
+              </Link>
             </Col>
             <Col>
-              <div className="ancient d-flex align-items-center justify-content-center">
-                <span className="about-shadow text-center text-white text-uppercase fs-4">
-                  ancient <br /> tour
-                </span>
-              </div>
+              <Link className="text-decoration-none">
+                <div className="ancient d-flex align-items-center justify-content-center">
+                  <span className="about-shadow text-center text-white text-uppercase fs-4">
+                    ancient <br /> tour
+                  </span>
+                </div>
+              </Link>
             </Col>
           </Row>
         </div>
@@ -62,7 +71,7 @@ const About = () => {
             Plan Your <br /> <strong style={{ color: "#ea3c23" }}>Trip</strong>{" "}
             with us
           </h1>
-          <p className="text-justify mt-4">
+          <p className="text-center mt-4">
             Use our free trip planner to get a personalized day by day itinerary
             for your vacation. <strong>Trip Expo</strong> is the new way to plan
             your holiday. Try to pick activities and places suitable to your

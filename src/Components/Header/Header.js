@@ -106,9 +106,8 @@ const Header = () => {
                     &nbsp;{user.displayName}
                   </span>
                   <NavLink
-                    activeClassName="navs-active"
                     style={{ fontSize: "12px" }}
-                    className="text-white ms-2 me-3 text-uppercase text-decoration-none"
+                    className="text-danger ms-2 me-3 text-uppercase text-decoration-none"
                     to="/signin"
                     onClick={logOut}
                   >

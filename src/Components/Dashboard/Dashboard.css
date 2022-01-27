@@ -11,11 +11,6 @@
   align-items: center;
   font-size: 15px;
 }
-hr.new {
-  border: 1px solid #c7ad8b;
-  width: 90%;
-}
-
 .side-menu {
   background-color: #212529;
   color: white;

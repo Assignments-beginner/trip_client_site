@@ -16,12 +16,7 @@ const Dashboard = () => {
   let { path, url } = useRouteMatch();
   return (
     <>
-      <div className="dashboard-text pt-4">
-        <span className="text-uppercase text-dark">Dash</span>
-        <span className="text-uppercase text-danger">Board</span>
-      </div>
-      <hr className="new mb-4 mx-auto" />
-      <Container className="mt-2">
+      <Container className="mt-5">
         <div className="d-flex">
           <div className="side-menu d-flex justify-content-center align-items-center px-3 mb-5">
             <Nav className="dash-nav">

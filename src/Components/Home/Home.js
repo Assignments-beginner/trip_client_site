@@ -33,7 +33,7 @@ const Home = () => {
         <Carousel>
           <Carousel.Item>
             <img
-              style={{ opacity: "0.5" }}
+              style={{ opacity: "0.7" }}
               className="d-block w-100 banners"
               src={slideOne}
               alt="First slide"
@@ -47,7 +47,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{ opacity: "0.5" }}
+              style={{ opacity: "0.7" }}
               className="d-block w-100 banners"
               src={slideTwo}
               alt="Second slide"
@@ -62,7 +62,7 @@ const Home = () => {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              style={{ opacity: "0.5" }}
+              style={{ opacity: "0.7" }}
               className="d-block w-100 banners"
               src={slideThree}
               alt="Third slide"
