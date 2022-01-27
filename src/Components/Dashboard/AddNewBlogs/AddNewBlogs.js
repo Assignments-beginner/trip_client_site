@@ -74,6 +74,14 @@ const AddNewBlogs = () => {
           {...register("blogRating")}
         />
 
+        <input
+          style={{ outline: "none" }}
+          className="mb-3 py-2 px-3 d-none"
+          defaultValue="Pending"
+          placeholder="Status"
+          {...register("blogStatus")}
+        />
+
         <Button className="w-25" variant="danger" type="submit">
           ADD
         </Button>

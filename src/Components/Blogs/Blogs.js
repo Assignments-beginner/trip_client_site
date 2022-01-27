@@ -30,7 +30,7 @@ const Blogs = () => {
             latest <strong style={{ color: "#ea3c23" }}>blogs</strong>
           </h2>
         </Col>
-        <Col xl="3" lg="3" className="border border-danger">
+        <Col xl="3" lg="3">
           <InputGroup className="mb-2">
             <FormControl
               placeholder="Search"
@@ -87,14 +87,16 @@ const Blogs = () => {
                   {tip.tipsTitle}
                 </button>
                 <Modal show={show} onHide={handleClose}>
-                  <Modal.Body closeButton>
-                    {/* <p
+                  <Modal.Body>
+                    <div className="d-flex justify-content-center py-4">
+                      <i class="display-4 far fa-lightbulb"></i>
+                    </div>
+                    <p
                       className="px-5 pb-4"
                       style={{ fontSize: "20px", textAlign: "justify" }}
                     >
                       {tip.tipsDescription}
-                    </p> */}
-                    {tip.tipsDescription}
+                    </p>
                   </Modal.Body>
                 </Modal>
               </div>
