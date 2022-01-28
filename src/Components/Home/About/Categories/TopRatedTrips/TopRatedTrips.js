@@ -7,16 +7,16 @@ import "./TopRatedTrips.css";
 const TopRatedTrips = () => {
   const [blogs, setBlogs] = useState([]);
 
+  const rating = "5";
+
   useEffect(() => {
-    fetch(
-      "https://shrouded-headland-08303.herokuapp.com/blogs"
-      // `http://localhost:5000/blogs/${cost}`
-      // `https://shrouded-headland-08303.herokuapp.com/blogs/${cost}`
+    fetch(      
+      `https://shrouded-headland-08303.herokuapp.com/toptrip?rating=${rating}`
     )
       .then((res) => res.json())
       .then((data) => setBlogs(data));
     // .then((data) => console.log(data))
-  }, [blogs]);
+  }, [rating]);
 
   return (
     <div className="pb-5">

@@ -7,16 +7,16 @@ import "./LongTrips.css";
 const LongTrips = () => {
   const [blogs, setBlogs] = useState([]);
 
+  const category = "Hicking";
+
   useEffect(() => {
     fetch(
-      "https://shrouded-headland-08303.herokuapp.com/blogs"
-      // `http://localhost:5000/blogs/${cost}`
-      // `https://shrouded-headland-08303.herokuapp.com/blogs/${cost}`
+      `https://shrouded-headland-08303.herokuapp.com/longtrip?category=${category}`
     )
       .then((res) => res.json())
       .then((data) => setBlogs(data));
     // .then((data) => console.log(data))
-  }, [blogs]);
+  }, [category]);
 
   return (
     <div className="pb-5">
