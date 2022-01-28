@@ -115,7 +115,7 @@ const LogIn = () => {
               </Link>
             </div>
             {/* Display Error */}
-            <p className="text-danger">{error}</p>
+            <h4 className="text-white pb-2">{error}</h4>
             {/* Register Button */}
             <Button onClick={signInHandler} variant="danger" type="submit">
               Sign In

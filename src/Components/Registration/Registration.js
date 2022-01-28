@@ -50,8 +50,9 @@ const Registration = () => {
 
   const addUserToDatabase = (email) => {
     //Heroku_Problem
-    // fetch("http://localhost:5000/users", {
-    fetch("https://shrouded-headland-08303.herokuapp.com/users", {
+    fetch("http://localhost:5000/users", {
+    // fetch("https://shrouded-headland-08303.herokuapp.com/users", {
+    // fetch("/users", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email }),
@@ -120,7 +121,7 @@ const Registration = () => {
 
             {/* |.| */}
 
-            <p className="text-danger">{error}</p>
+            <h4 className="text-white pb-2">{error}</h4>
 
             {/* |.| */}
 

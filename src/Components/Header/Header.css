@@ -26,6 +26,10 @@
   margin-left: 30px;
 }
 
+.user-img {
+  background-image: url("../../Images/user.png");
+}
+
 @media all and (max-width: 688px) {
   .travelBoy {
     display: none;

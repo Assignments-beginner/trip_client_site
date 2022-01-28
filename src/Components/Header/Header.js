@@ -97,17 +97,17 @@ const Header = () => {
                 <div className="d-flex align-items-center userBar">
                   <img
                     className="rounded-circle user-img"
-                    width={32}
-                    height={32}
+                    width={25}
+                    height={25}
                     src={user.photoURL}
                     alt=""
                   />
-                  <span style={{ fontSize: "12px" }} className="text-white">
+                  <span style={{ fontSize: "12px" }} className="text-white ms-1">
                     &nbsp;{user.displayName}
                   </span>
                   <NavLink
                     style={{ fontSize: "12px" }}
-                    className="text-danger ms-2 me-3 text-uppercase text-decoration-none"
+                    className="text-danger ms-2 ms-3 text-uppercase text-decoration-none"
                     to="/signin"
                     onClick={logOut}
                   >

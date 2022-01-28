@@ -15,6 +15,7 @@ import Sorry from "./Components/Sorry/Sorry";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import SingleTip from "./Components/Blogs/SingleTip/SingleTip";
 import SingleBlog from "./Components/Blogs/SingleBlog/SingleBlog";
+import Greetings from "./Components/Greetings/Greetings";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 function App() {
@@ -54,6 +55,9 @@ function App() {
                 <Route path="/registration">
                   <Registration></Registration>
                 </Route>
+                <PrivateRoute path="/greetings">
+                  <Greetings></Greetings>
+                </PrivateRoute>
                 <PrivateRoute path="/dashboard">
                   <Dashboard></Dashboard>
                 </PrivateRoute>
