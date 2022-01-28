@@ -22,7 +22,7 @@ const About = () => {
               <Link to="/topRatedTrips" className="text-decoration-none">
                 <div className="adventure d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    top rated <br /> trips
+                    top rated <br /> trip
                   </span>
                 </div>
               </Link>
@@ -31,7 +31,7 @@ const About = () => {
               <Link to="/longTrips" className="text-decoration-none">
                 <div className="wildlife d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    long <br /> trips
+                    long <br /> trip
                   </span>
                 </div>
               </Link>
@@ -42,7 +42,7 @@ const About = () => {
               <Link to="/shortTrips" className="text-decoration-none">
                 <div className="country d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    short <br /> trips
+                    short <br /> trip
                   </span>
                 </div>
               </Link>
@@ -51,7 +51,7 @@ const About = () => {
               <Link to="/expensiveTrips" className="text-decoration-none">
                 <div className="ancient d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
-                    expensive <br /> trips
+                    expensive <br /> trip
                   </span>
                 </div>
               </Link>

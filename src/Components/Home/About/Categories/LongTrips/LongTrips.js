@@ -21,7 +21,7 @@ const LongTrips = () => {
   return (
     <div className="pb-5">
       <h2 className="display-6 text-center text-uppercase my-5">
-        <strong style={{ color: "#ea3c23" }}>Long</strong> Trips
+        <strong style={{ color: "#ea3c23" }}>Long</strong> Trip
       </h2>
       <Container className="w-100 mb-5">
         <Row className="g-5">

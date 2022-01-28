@@ -21,7 +21,7 @@ const ExpensiveTrips = () => {
   return (
     <div className="pb-5">
       <h2 className="display-6 text-center text-uppercase my-5">
-        <strong style={{ color: "#ea3c23" }}>Expensive</strong> Trips
+        <strong style={{ color: "#ea3c23" }}>Expensive</strong> Trip
       </h2>
       <Container className="w-100 mb-5">
         <Row className="g-5">
