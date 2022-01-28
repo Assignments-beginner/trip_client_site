@@ -6,6 +6,7 @@ import AddReview from "./AddReview/AddReview";
 import AddNewBlogs from "./AddNewBlogs/AddNewBlogs";
 import MakeAdmin from "./MakeAdmin/MakeAdmin";
 import ManageAllBlogs from "./ManageAllBlogs/ManageAllBlogs";
+import ReadAllBlogs from "./ReadAllBlogs/ReadAllBlogs";
 import Tips from "./Tips/Tips";
 import useAuth from "../../Hooks/useAuth";
 import AdminRoute from "../AdminRoute/AdminRoute";
@@ -58,6 +59,19 @@ const Dashboard = () => {
 
                   <NavLink
                     activeClassName="dashboard-navText-active"
+                    className="dashboard-navText mb-5 text-decoration-none text-uppercase pe-3"
+                    to={`${url}/ReadAllBlogs`}
+                  >
+                    <div className="icons">
+                      <i class="fas fa-book-open"></i>
+                    </div>{" "}
+                    <span className="d-navText">Read&nbsp;</span>
+                    <span className="d-navText">All&nbsp;</span>
+                    <span className="d-navText">Blogs</span>
+                  </NavLink>
+
+                  <NavLink
+                    activeClassName="dashboard-navText-active"
                     className="dashboard-navText text-decoration-none text-uppercase pb-5"
                     to={`${url}/makeadmin`}
                   >
@@ -99,6 +113,10 @@ const Dashboard = () => {
 
               <AdminRoute path={`${path}/ManageAllBlogs`}>
                 <ManageAllBlogs></ManageAllBlogs>
+              </AdminRoute>
+
+              <AdminRoute path={`${path}/ReadAllBlogs`}>
+                <ReadAllBlogs></ReadAllBlogs>
               </AdminRoute>
 
               <AdminRoute path={`${path}/makeadmin`}>
