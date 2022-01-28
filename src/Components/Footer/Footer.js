@@ -57,11 +57,11 @@ const Footer = () => {
             <strong>We Have been featured in</strong>
           </p>
           <div>
-            <img src={cnn} alt="" />
-            <img src={bbc} alt="" />
+            <img className="m-3" width="98" height="40" src={cnn} alt="" />
+            <img className="m-3" width="140" height="44" src={bbc} alt="" />
           </div>
           <div>
-          <img src={natgeo} alt="" />
+          <img className="m-3" width="220" height="64" src={natgeo} alt="" />
           </div>
         </div>
 
