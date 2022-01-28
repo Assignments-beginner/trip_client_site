@@ -9,9 +9,9 @@ import {
 import slideOne from "../../Images/slide1.png";
 import slideTwo from "../../Images/slide2.png";
 import slideThree from "../../Images/slide3.png";
-import About from "../About/About";
-import Destinations from "../Destinations/Destinations";
-import Blogs from "../Blogs/Blogs";
+import About from "../Home/About/About";
+import Destinations from "../Home/Destinations/Destinations";
+import Blogs from "../Home/Blogs/Blogs";
 import "./Home.css";
 const Home = () => {
   const [email, setEmail] = useState("");

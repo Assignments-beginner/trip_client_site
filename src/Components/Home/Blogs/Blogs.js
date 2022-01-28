@@ -27,7 +27,7 @@ const Blogs = () => {
   }, []);
 
   return (
-    <Container className="py-5">
+    <Container className="pt-5">
       <Row className="d-flex">
         <Col xl="9" lg="9" sm="12">
           <h2 className="text-center display-6 text-uppercase mb-5">

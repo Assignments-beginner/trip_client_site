@@ -49,6 +49,15 @@ const AddNewBlogs = () => {
           className="mb-3 py-2 px-3"
           placeholder="Your Image URL"
           {...register("blogPeopleImg")}
+        />        
+
+        <span className="mb-2">Choose Category</span>
+
+        <input
+          style={{ outline: "none" }}
+          className="mb-3 py-2 px-3"
+          placeholder="City / Beach / Ancient / Hicking"
+          {...register("blogCategory")}
         />
 
         <input

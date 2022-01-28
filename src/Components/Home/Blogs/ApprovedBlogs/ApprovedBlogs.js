@@ -27,9 +27,8 @@ const ApprovedBlogs = () => {
     <div>
       <div className="pb-5">
         <Container className="w-100 mb-5">
-          <Row className="g-5">
-            {/* {blogs.filter(blog => blog.blogStatus == Approved) => ( */}
-            {blogs.map((blog) => (
+          <Row className="g-5">            
+            {blogs.reverse().map((blog) => (
               <Col key={blog._id} blog={blog} xl={4} lg={4}>
                 <Card
                   className="h-100"
@@ -102,7 +101,7 @@ const ApprovedBlogs = () => {
           </Row>
         </Container>
         <Container className="d-flex justify-content-center">
-          <div className="pagination my-4">
+          <div className="pagination mt-4">
             {[...Array(pageCount).keys()].map((number) => (
               <button
                 className={number === page ? "selected" : ""}

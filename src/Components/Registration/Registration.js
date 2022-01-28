@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import "../Registration/Registration.css";
-import axios from "axios";
 import useAuth from "../../Hooks/useAuth";
 
 const Registration = () => {
