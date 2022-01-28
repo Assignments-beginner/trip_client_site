@@ -45,7 +45,7 @@ const ApprovedBlogs = () => {
                     variant="top"
                     src={blog.blogImg}
                   />
-                  <Card.Body className="p-4">
+                  <Card.Body className="d-flex flex-column">
                     <strong
                       className="text-dark text-uppercase"
                       style={{ fontSize: "12px" }}
@@ -53,7 +53,7 @@ const ApprovedBlogs = () => {
                       {blog.blogTitle}
                     </strong>
 
-                    <div className="mt-3">
+                    <div className="mt-auto pt-3">
                       <Link
                         to={`/singleblog/${blog._id}`}
                         className="text-decoration-none"
@@ -94,6 +94,7 @@ const ApprovedBlogs = () => {
                         </span>
                       </div>
                     </div>
+
                   </Card.Body>
                 </Card>
               </Col>
