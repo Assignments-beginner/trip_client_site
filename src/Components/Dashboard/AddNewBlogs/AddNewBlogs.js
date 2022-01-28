@@ -19,7 +19,7 @@ const AddNewBlogs = () => {
             position: "center",
             icon: "success",
             title:
-              "New blog added successfully! Admin will post this blog later.",
+              "Your blog added successfully! We will work on your blog.",
             showConfirmButton: false,
             timer: 2500,
           });

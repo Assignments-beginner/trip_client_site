@@ -8,6 +8,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
+  sendEmailVerification,
 } from "firebase/auth";
 import initializeAuthentication from "../Firebase/firebase.init";
 
@@ -118,6 +119,8 @@ const useFirebase = () => {
     setIsLoading,
     logOut,
     admin,
+    sendEmailVerification,
+    getAuth,
   };
 };
 

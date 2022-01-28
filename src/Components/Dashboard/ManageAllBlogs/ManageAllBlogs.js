@@ -81,7 +81,7 @@ const ManageAllBlogs = () => {
           <tbody>
             {allBlogs.map((blog) => (
               <tr key={blog._id} blog={blog}>
-                <td className="table-text text-center">{blog._id}</td>
+                <td className="table-text text-center">{blog._id.slice(0,7)}</td>
                 <td className="table-text text-center">{blog.blogStatus}</td>
 
                 <td className="table-text text-center">

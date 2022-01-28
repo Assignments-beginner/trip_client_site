@@ -13,7 +13,7 @@ const Greetings = ({ backgroundColor = "#F7F7F7", children }) => {
         className="text-decoration-none text-center mb-3"
         to="/home"
       >
-        <span style={{ color: "#d9534f", fontSize: "20px" }}>Let's Go...</span>
+        <span style={{ color: "#d9534f", fontSize: "20px" }}>Let's Go -></span>
       </Link>
       <div className="pb-5">
         <img height="362" width="192" src={letsGo} alt="" />

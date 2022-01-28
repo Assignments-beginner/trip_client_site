@@ -15,16 +15,19 @@ const Registration = () => {
     registerNewUser,
     error,
     setError,
+    sendEmailVerification,
+    getAuth,
   } = useAuth();
 
   const location = useLocation();
   const history = useHistory();
   // console.log(location.state?.from);
-  const redirect_uri = location.state?.from || "/greetings";  
+  const redirect_uri = location.state?.from || "/greetings";
 
   /*-------------------------------------------------------------------------------*\
   /////////////////////////////// REGISTER HANDLER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 \*-------------------------------------------------------------------------------*/
+
   const registrationHandler = (e) => {
     e.preventDefault();
     registerNewUser(email, password)
@@ -32,26 +35,32 @@ const Registration = () => {
         //Redirect Path
         history.push(redirect_uri);
         const user = result.user;
-        console.log(user);
+        // console.log(user);
         setError("");
         //Update displayName
         setUserName();
         //add user to mongoDB
         addUserToDatabase(user.email);
         window.location.reload();
+        verificationEmail();
       })
       .catch((error) => {
         setError(error.message);
       });
   };
-
-  //Heroku_Problem
-  //add user to mongoDB
+  const auth = getAuth();
+  const verificationEmail = () => {
+    sendEmailVerification(auth.currentUser).then((result) => {
+      console.log(result);
+    });
+  };
 
   const addUserToDatabase = (email) => {
     //Heroku_Problem
+    //on localhost working fine
+    //but on heroku api not working + also not giving any error
     // fetch("http://localhost:5000/users", {
-    fetch("https://shrouded-headland-08303.herokuapp.com/users", {    
+    fetch("https://shrouded-headland-08303.herokuapp.com/users", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email }),
