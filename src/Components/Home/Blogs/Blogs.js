@@ -35,6 +35,7 @@ const Blogs = () => {
           </h2>
           <ApprovedBlogs />
         </Col>
+        {/* Tips Bar ////////////////// */}
         <Col xl="3" lg="3" className="tipsBar">
           <InputGroup className="mb-2">
             <FormControl
