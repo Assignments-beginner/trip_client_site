@@ -3,6 +3,10 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header";
 import About from "./Components/Home/About/About";
+import ExpensiveTrips from "./Components/Home/About/Categories/ExpensiveTrips/ExpensiveTrips";
+import LongTrips from "./Components/Home/About/Categories/LongTrips/LongTrips";
+import ShortTrips from "./Components/Home/About/Categories/ShortTrips/ShortTrips";
+import TopRatedTrips from "./Components/Home/About/Categories/TopRatedTrips/TopRatedTrips";
 import Destinations from "./Components/Home/Destinations/Destinations";
 import Blogs from "./Components/Home/Blogs/Blogs";
 import Footer from "./Components/Footer/Footer";
@@ -36,6 +40,18 @@ function App() {
                 </Route>
                 <Route path="/about">
                   <About></About>
+                </Route>
+                <Route path="/expensiveTrips">
+                  <ExpensiveTrips />
+                </Route>
+                <Route path="/longTrips">
+                  <LongTrips />
+                </Route>
+                <Route path="/shortTrips">
+                  <ShortTrips />
+                </Route>
+                <Route path="/topRatedTrips">
+                  <TopRatedTrips />
                 </Route>
                 <Route path="/singletip/:id">
                   <SingleTip></SingleTip>

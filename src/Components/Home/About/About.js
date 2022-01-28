@@ -19,7 +19,7 @@ const About = () => {
         <div className="adventures px-5">
           <Row>
             <Col>
-              <Link className="text-decoration-none">
+              <Link to="/topRatedTrips" className="text-decoration-none">
                 <div className="adventure d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
                     top rated <br /> trips
@@ -28,7 +28,7 @@ const About = () => {
               </Link>
             </Col>
             <Col>
-              <Link className="text-decoration-none">
+              <Link to="/longTrips" className="text-decoration-none">
                 <div className="wildlife d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
                     long <br /> trips
@@ -39,7 +39,7 @@ const About = () => {
           </Row>
           <Row>
             <Col>
-              <Link className="text-decoration-none">
+              <Link to="/shortTrips" className="text-decoration-none">
                 <div className="country d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
                     short <br /> trips
@@ -48,7 +48,7 @@ const About = () => {
               </Link>
             </Col>
             <Col>
-              <Link className="text-decoration-none">
+              <Link to="/expensiveTrips" className="text-decoration-none">
                 <div className="ancient d-flex align-items-center justify-content-center">
                   <span className="about-shadow text-center text-white text-uppercase fs-4">
                     expensive <br /> trips
