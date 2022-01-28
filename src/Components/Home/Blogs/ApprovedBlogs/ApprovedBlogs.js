@@ -27,8 +27,9 @@ const ApprovedBlogs = () => {
     <div>
       <div className="pb-5">
         <Container className="w-100 mb-5">
-          <Row className="g-5">            
-            {blogs.reverse().map((blog) => (
+          <Row className="g-5">
+            {/* {blogs.reverse().map((blog) => ( */}
+            {blogs.map((blog) => (
               <Col key={blog._id} blog={blog} xl={4} lg={4}>
                 <Card
                   className="h-100"
@@ -93,7 +94,6 @@ const ApprovedBlogs = () => {
                         </span>
                       </div>
                     </div>
-
                   </Card.Body>
                 </Card>
               </Col>

@@ -42,7 +42,10 @@ const SingleBlog = () => {
             />
             <span className="text-uppercase">{singleBlog.blogPeople}</span>
           </div>
-          <Link className="pt-5 text-decoration-none text-danger" to="/home">
+          <Link
+            className="pt-5 text-decoration-none text-danger"
+            to="/expensiveTrips"
+          >
             Back To Home
           </Link>
         </Container>
