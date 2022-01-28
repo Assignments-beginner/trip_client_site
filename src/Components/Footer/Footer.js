@@ -1,5 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import bbc from "../../Images/BBCLogo.png";
+import natgeo from "../../Images/NationalGeographicLogo.png";
+import cnn from "../../Images/CNNLogo.png";
 import "./Footer.css";
 const Footer = () => {
   return (
@@ -51,19 +54,14 @@ const Footer = () => {
         {/* ////////////////////// Open Hours ////////////////////// */}
         <div className="text-center mt-2 footer-details-top">
           <p className="text-white text-uppercase">
-            <strong>pay from anywhere</strong>
+            <strong>We Have been featured in</strong>
           </p>
-
           <div>
-            <i className="fab fa-cc-visa text-white fs-1 p-2"></i>
-            <i className="fab fa-google-pay text-white fs-1 p-2"></i>
-            <i className="fab fa-cc-mastercard text-white fs-1 p-2"></i>
+            <img src={cnn} alt="" />
+            <img src={bbc} alt="" />
           </div>
-
           <div>
-            <i className="fab fa-cc-paypal text-white fs-1 p-2"></i>
-            <i className="fab fa-cc-amazon-pay text-white fs-1 p-2"></i>
-            <i className="fab fa-cc-stripe text-white fs-1 text-white fs-1 p-2"></i>
+          <img src={natgeo} alt="" />
           </div>
         </div>
 
