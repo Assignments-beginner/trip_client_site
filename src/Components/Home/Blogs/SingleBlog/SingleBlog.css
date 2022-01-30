@@ -1,17 +1,9 @@
-.readTitle {
-  font-size: 20px;
-}
 .blogDescription {
   font-size: 20px;
   color: black;
 }
+
 @media all and (max-width: 688px) {
-  .dashboard-sectionTitle {
-    font-size: 20px;
-  }
-  .readTitle {
-    font-size: 15px;
-  }
   .blogDescription {
     font-size: 13px;
   }

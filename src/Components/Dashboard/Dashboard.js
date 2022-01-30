@@ -28,8 +28,10 @@ const Dashboard = () => {
               >
                 <div className="icons">
                   <i className="fas fa-plus-square"></i>
-                </div>{" "}
-                <span className="d-navText">Add New Blogs</span>
+                </div>
+                <span className="d-navText">Add&nbsp;</span>
+                <span className="d-navText">All&nbsp;</span>
+                <span className="d-navText">Blogs&nbsp;&nbsp;&nbsp;</span>
               </NavLink>
               <NavLink
                 activeClassName="dashboard-navText-active"
@@ -38,7 +40,7 @@ const Dashboard = () => {
               >
                 <div className="icons">
                   <i className="far fa-comment-alt"></i>
-                </div>{" "}
+                </div>
                 <span className="d-navText">Add Review</span>
               </NavLink>
 
@@ -46,25 +48,25 @@ const Dashboard = () => {
                 <Nav className="dash-nav">
                   <NavLink
                     activeClassName="dashboard-navText-active"
-                    className="dashboard-navText mb-5 text-decoration-none text-uppercase pe-3"
+                    className="dashboard-navText mb-5 text-decoration-none text-uppercase"
                     to={`${url}/ManageAllBlogs`}
                   >
                     <div className="icons">
                       <i className="fas fa-cube"></i>
-                    </div>{" "}
+                    </div>
                     <span className="d-navText">Manage&nbsp;</span>
                     <span className="d-navText">All&nbsp;</span>
-                    <span className="d-navText">Blogs</span>
+                    <span className="d-navText">Blogs&nbsp;&nbsp;&nbsp;</span>
                   </NavLink>
 
                   <NavLink
                     activeClassName="dashboard-navText-active"
-                    className="dashboard-navText mb-5 text-decoration-none text-uppercase pe-3"
+                    className="dashboard-navText mb-5 text-decoration-none text-uppercase"
                     to={`${url}/ReadAllBlogs`}
                   >
                     <div className="icons">
-                      <i class="fas fa-book-open"></i>
-                    </div>{" "}
+                      <i className="fas fa-book-open"></i>
+                    </div>
                     <span className="d-navText">Read&nbsp;</span>
                     <span className="d-navText">All&nbsp;</span>
                     <span className="d-navText">Blogs</span>
@@ -72,23 +74,23 @@ const Dashboard = () => {
 
                   <NavLink
                     activeClassName="dashboard-navText-active"
-                    className="dashboard-navText text-decoration-none text-uppercase pb-5"
+                    className="dashboard-navText text-decoration-none text-uppercase mb-5"
                     to={`${url}/makeadmin`}
                   >
                     <div className="icons">
                       <i className="fas fa-user"></i>
-                    </div>{" "}
+                    </div>
                     <span className="d-navText">Make Admin</span>
                   </NavLink>
 
                   <NavLink
                     activeClassName="dashboard-navText-active"
-                    className="dashboard-navText text-decoration-none text-uppercase pb-5"
+                    className="dashboard-navText text-decoration-none text-uppercase mb-5"
                     to={`${url}/addnewtips`}
                   >
                     <div className="icons">
                       <i className="far fa-lightbulb"></i>
-                    </div>{" "}
+                    </div>
                     <span className="d-navText">Add New Tips</span>
                   </NavLink>
                 </Nav>
@@ -97,6 +99,7 @@ const Dashboard = () => {
             {/* 1st div  */}
           </div>
 
+          {/* {Nested Navigation///////////////////////} */}
           <div className="dashboard-section">
             <Switch>
               <Route exact path={path}>
@@ -115,9 +118,11 @@ const Dashboard = () => {
                 <ManageAllBlogs></ManageAllBlogs>
               </AdminRoute>
 
-              <AdminRoute path={`${path}/ReadAllBlogs`}>
-                <ReadAllBlogs></ReadAllBlogs>
-              </AdminRoute>
+              {
+                <AdminRoute path={`${path}/ReadAllBlogs`}>
+                  <ReadAllBlogs></ReadAllBlogs>
+                </AdminRoute>
+              }
 
               <AdminRoute path={`${path}/makeadmin`}>
                 <MakeAdmin></MakeAdmin>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import Rating from "react-rating";
+import "../ReadAllBlogs/ReadAllBlogs.css";
 
 const ReadAllBlogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -14,17 +15,18 @@ const ReadAllBlogs = () => {
 
   return (
     <div>
-    <h3 className="dashboard-sectionTitle text-center text-uppercase">
-        Read All <span className="text-danger">Blogs</span>
-      </h3>
-      <h5 className="dashboard-orderTitle text-center text-uppercase mt-3 mb-4">
-        Total <strong className="text-danger">{blogs.length}</strong> Blogs
-      </h5>
-      <Container className="w-100 mb-5">
-        <Row className="g-5">
-          {/* {blogs.reverse().map((blog) => ( */}
+      <Container className="mb-5">
+        <div>
+          <h3 className="dashboard-sectionTitle text-center text-uppercase">
+            Read All <span className="text-danger">Blogs</span>
+          </h3>
+          <h5 className="dashboard-orderTitle text-center text-uppercase mt-3 mb-4">
+            Total <strong className="text-danger">{blogs.length}</strong> Blogs
+          </h5>
+        </div>
+        <Row className="mx-auto">
           {blogs.map((blog) => (
-            <Col key={blog._id} blog={blog} xl={12} lg={12}>
+            <Col className="mb-5" key={blog._id} blog={blog} xl={12} lg={12} sm={12} xs={12}>
               <Card
                 className="h-100"
                 style={{
@@ -34,23 +36,22 @@ const ReadAllBlogs = () => {
                 }}
               >
                 <Card.Img
-                  width="340"
                   height="290"
                   variant="top"
                   className="p-3"
                   src={blog.blogImg}
+                  style={{ width: "100%" }}
                 />
-                <Card.Body className="d-flex flex-column">
+                <Card.Body className="d-flex flex-column px-3">
                   <strong
-                    className="text-dark text-uppercase mb-3 px-3"
-                    style={{ fontSize: "20px" }}
+                    className="readTitle text-dark text-uppercase mb-3"
                   >
                     {blog.blogTitle}
                   </strong>
 
                   <p className="px-3 text-justify">{blog.blogDescription}</p>
 
-                  <div className="mt-auto py-3 px-3">
+                  <div className="mt-auto py-3">
                     <div className="blogCost mt-3">
                       <span style={{ fontSize: "22px" }} className="text-dark">
                         ${blog.blogCost}

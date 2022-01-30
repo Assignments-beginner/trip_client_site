@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./SingleBlog.css";
 
 const SingleBlog = () => {
   const { id } = useParams();
@@ -27,8 +28,7 @@ const SingleBlog = () => {
         </Container>
         <Container className="w-75">
           <p
-            style={{ fontSize: "20px", color: "black" }}
-            className="mx-auto text-justify pt-5"
+            className="blogDescription mx-auto text-justify pt-5"
           >
             {singleBlog.blogDescription}
           </p>
